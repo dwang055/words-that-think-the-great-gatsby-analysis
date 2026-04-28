@@ -1,0 +1,3297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Words That Think · The Great Gatsby (Analysis)</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<meta name="description" content="A literary vocabulary builder for IGCSE and advanced students. Each entry includes a complete quote from Fitzgerald's novel, context explanation, analytical paragraph, thematic sentence, and creative writing model. 75 words covering the novel's central themes: the American Dream, class, illusion, love, and moral decay.">
+<meta name="theme-color" content="#06131a">
+<style>
+:root {
+  --bg:       #06131a;
+  --panel:    #0b1b24;
+  --panel2:   #0e2230;
+  --stroke:   #7ad0e0;
+  --text:     #e7fbff;
+  --muted:    #9fd6df;
+  --muted2:   #4a6e78;
+  --bad:      #ff5c7a;
+  --good:     #6ef7c8;
+  --gold:     #f0c040;
+  --gold2:    #ffe080;
+  --s35:      rgba(122,208,224,.35);
+  --s60:      rgba(122,208,224,.60);
+  --s20:      rgba(122,208,224,.20);
+  --o15:      rgba(0,0,0,.15);
+  --o25:      rgba(0,0,0,.25);
+  --panel-a:  rgba(11,27,36,.90);
+  --good15:   rgba(110,247,200,.15);
+  --good60:   rgba(110,247,200,.60);
+  --bad12:    rgba(255,92,122,.12);
+  --bad55:    rgba(255,92,122,.55);
+  --gold10:   rgba(240,192,64,.10);
+  --gold50:   rgba(240,192,64,.50);
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(900px 600px at 50% 0%, var(--panel2) 0%, var(--bg) 65%);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+button { font-family: inherit; color: var(--text); cursor: pointer; }
+.wrapper { max-width: 680px; margin: 0 auto; padding: 0 14px; }
+.app-header {
+  text-align: center;
+  padding: 32px 10px 22px;
+  border-bottom: 1px solid var(--s20);
+}
+.app-header h1 {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--good);
+  letter-spacing: .01em;
+  text-shadow: 0 0 30px rgba(110,247,200,.25);
+  line-height: 1.15;
+}
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-header .book-credit {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header-star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header-badge {
+  background: var(--panel-a);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.header-badge:hover { background: rgba(122,208,224,.08); border-color: var(--s60); }
+.header-badge.active { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+.group-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted2);
+  font-weight: 700;
+}
+.group-num {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--good);
+  letter-spacing: .02em;
+}
+.group-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+}
+.group-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--muted2);
+  transition: background .2s, transform .2s;
+}
+.group-dot.active { background: var(--good); transform: scale(1.3); }
+.group-dot.done { background: var(--s60); }
+.nav-pill {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--muted);
+  transition: all .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover:not(:disabled) { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.nav-pill:disabled { opacity: .35; pointer-events: none; }
+.word-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+.word-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.word-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.word-counter span { color: var(--text); }
+.icon-btn {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: all .15s;
+  color: var(--muted);
+}
+.icon-btn:hover { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.icon-btn.starred { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.icon-btn:disabled { opacity: .3; pointer-events: none; }
+.word-card {
+  margin-top: 10px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid var(--s35);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.word-card-top {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--s20);
+}
+.word-left { display: flex; flex-direction: column; gap: 4px; }
+.word-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: .02em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(240,192,64,.2);
+}
+.pron-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pron-text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.speak-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  transition: all .15s;
+}
+.speak-btn:hover { background: rgba(110,247,200,.25); }
+.chapter-badge {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.definition-block {
+  padding: 14px 20px 16px;
+  border-bottom: 1px solid var(--s20);
+}
+.def-en {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(231,251,255,.9);
+}
+.def-zh {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.sentence-tab-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--s20);
+}
+.sent-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted2);
+  transition: all .15s;
+  text-align: center;
+}
+.sent-tab:hover { color: var(--muted); background: rgba(122,208,224,.04); }
+.sent-tab.active {
+  color: var(--good);
+  border-bottom-color: var(--good);
+  background: rgba(110,247,200,.04);
+}
+.sentence-content {
+  padding: 18px 20px 20px;
+}
+.sent-en {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  font-style: italic;
+}
+.sent-zh {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 400;
+  padding-top: 12px;
+  border-top: 1px solid var(--s20);
+}
+.sent-en .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-zh .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-source {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: .04em;
+}
+.quiz-phase-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: 10px;
+}
+.quiz-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.quiz-header:hover { background: rgba(122,208,224,.05); }
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.quiz-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 1px;
+}
+.quiz-score-badge {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  display: none;
+}
+.quiz-toggle-icon { font-size: 0.85rem; color: var(--muted2); transition: transform .2s; }
+.quiz-toggle-icon.open { transform: rotate(180deg); }
+.quiz-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--s20);
+}
+.quiz-body.open { display: block; }
+.quiz-progress-bar {
+  height: 4px;
+  background: rgba(122,208,224,.12);
+  border-radius: 999px;
+  margin: 14px 0 16px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--good), #4edfc9);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+.quiz-q-num {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+.quiz-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 3vw, 1.15rem);
+  line-height: 1.8;
+  color: rgba(231,251,255,.9);
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.blank { color: var(--gold); font-style: normal; font-weight: 700; letter-spacing: .1em; }
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.choice-btn {
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-btn:hover:not(:disabled) { background: rgba(122,208,224,.12); border-color: var(--s60); }
+.choice-btn .choice-label {
+  background: var(--s35);
+  border-radius: 4px;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.choice-btn.correct { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.choice-btn.wrong   { background: var(--bad12);  border-color: var(--bad55);  color: var(--bad); }
+.choice-btn:disabled { pointer-events: none; opacity: .7; }
+.quiz-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: none;
+}
+.quiz-feedback.correct-fb { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.quiz-feedback.wrong-fb   { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.quiz-next-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  display: none;
+  transition: background .15s;
+}
+.quiz-next-btn:hover { background: rgba(122,208,224,.18); }
+.quiz-result {
+  display: none;
+  text-align: center;
+  padding: 16px 0 4px;
+}
+.quiz-result-score {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--good);
+  line-height: 1;
+}
+.quiz-result-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.quiz-result-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.quiz-retry-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-retry-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-start-area {
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.quiz-start-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.quiz-start-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-start-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-skip-btn {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 0.78rem;
+  margin-left: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.starred-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.starred-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.starred-header:hover { background: rgba(240,192,64,.04); }
+.starred-header-left { display: flex; align-items: center; gap: 10px; }
+.starred-title { font-size: 0.9rem; font-weight: 800; color: var(--text); }
+.starred-count {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.starred-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--s20); }
+.starred-body.open { display: block; }
+.starred-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+}
+.starred-chip {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  transition: all .15s;
+}
+.starred-chip:hover { background: rgba(240,192,64,.18); }
+.starred-empty {
+  padding-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted2);
+  font-style: italic;
+  text-align: center;
+}
+.my-sentences-block {
+  padding: 16px 20px 18px;
+  border-top: 1px solid var(--s20);
+}
+.my-sent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.my-sent-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: .02em;
+}
+.my-sent-counter {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted2);
+  background: var(--o25);
+  border: 1px solid var(--s20);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.my-sent-counter.full { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.my-sent-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.my-sent-input {
+  flex: 1;
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color .15s;
+  min-width: 0;
+}
+.my-sent-input:focus { border-color: var(--s60); background: rgba(122,208,224,.09); }
+.my-sent-input::placeholder { color: var(--muted2); }
+.my-sent-save-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--stroke);
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.my-sent-save-btn:hover { background: rgba(122,208,224,.2); }
+.my-sent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+}
+.my-sent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.my-sent-num {
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: var(--muted2);
+  background: var(--s20);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.my-sent-text {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(231,251,255,.85);
+}
+.my-sent-del {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 3px;
+  flex-shrink: 0;
+  opacity: .6;
+  transition: color .15s, opacity .15s;
+}
+.my-sent-del:hover { color: var(--bad); opacity: 1; }
+.starred-quiz-divider {
+  height: 1px;
+  background: var(--s20);
+  margin: 14px 0;
+}
+.sq-start-area { text-align: center; padding-bottom: 4px; }
+.sq-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.sq-unlock-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-style: italic;
+}
+footer {
+  margin-top: 36px;
+  padding: 20px 14px 28px;
+  border-top: 1px solid var(--s20);
+  text-align: center;
+}
+.footer-author {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.9;
+}
+.footer-author a { color: var(--muted); text-decoration: none; }
+.footer-author a:hover { color: var(--stroke); }
+.footer-quote {
+  margin-top: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted2);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11,27,36,.96);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  white-space: nowrap;
+  z-index: 9999;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.gold { border-color: var(--gold50); color: var(--gold); }
+#toast.good { border-color: var(--good60); color: var(--good); }
+@media (max-width: 480px) {
+  .word-card-top { flex-wrap: wrap; }
+  .quiz-choices { grid-template-columns: 1fr; }
+  .group-dots { display: none; }
+  .nav-pill { padding: 7px 12px; font-size: 0.8rem; }
+}
+.synan-block {
+  padding: 10px 20px 14px;
+  border-bottom: 1px solid var(--s20);
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+.synan-group { flex: 1; min-width: 0; }
+.synan-label {
+  font-size: 0.65rem; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .1em; margin-bottom: 5px;
+}
+.synan-label.syn { color: var(--good); }
+.synan-label.ant { color: var(--bad); }
+.synan-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.synan-chip {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 9px;
+  border-radius: 999px;
+}
+.synan-chip.syn { background: rgba(110,247,200,.1); border: 1px solid rgba(110,247,200,.35); color: var(--good); }
+.synan-chip.ant { background: rgba(255,92,122,.08); border: 1px solid rgba(255,92,122,.3);  color: var(--bad); }
+.spell-content { padding: 18px 20px 22px; }
+.spell-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  margin-bottom: 18px;
+}
+.spell-sentence .hl { font-style: normal; font-weight: 700; color: var(--gold2); }
+.spell-boxes {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin-bottom: 18px;
+}
+.spell-box {
+  width: 40px; height: 46px;
+  border: 2px solid var(--s35);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; font-weight: 800; text-transform: lowercase;
+  background: rgba(122,208,224,.05);
+  transition: border-color .15s, background .15s;
+  flex-shrink: 0;
+}
+.spell-box.filled   { border-color: var(--s60); background: rgba(122,208,224,.1); color: var(--text); }
+.spell-box.correct  { border-color: var(--good); background: rgba(110,247,200,.15); color: var(--good); }
+.spell-box.wrong    { border-color: var(--bad);  background: rgba(255,92,122,.12);  color: var(--bad); }
+.spell-box.cursor   { border-color: var(--gold); animation: spell-blink .9s ease infinite; }
+@keyframes spell-blink { 0%,100% { border-color: var(--gold); } 50% { border-color: transparent; } }
+.spell-input-row {
+  display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.spell-input {
+  background: rgba(122,208,224,.06); border: 1px solid var(--s35);
+  border-radius: 12px; color: var(--text); font-family: inherit;
+  font-size: 1rem; font-weight: 700; padding: 9px 14px; outline: none;
+  width: 180px; text-align: center; letter-spacing: .12em;
+  transition: border-color .15s;
+}
+.spell-input:focus { border-color: var(--s60); }
+.spell-input::placeholder { color: var(--muted2); font-weight: 400; letter-spacing: 0; }
+.spell-check-btn {
+  background: var(--good15); border: 1px solid var(--good60);
+  border-radius: 12px; padding: 9px 18px;
+  font-size: .88rem; font-weight: 800; color: var(--good);
+  transition: background .15s;
+}
+.spell-check-btn:hover { background: rgba(110,247,200,.25); }
+.spell-reveal-btn {
+  background: none; border: none; color: var(--muted2);
+  font-size: .78rem; text-decoration: underline; cursor: pointer;
+  display: block; text-align: center; margin-top: 4px;
+}
+.spell-feedback {
+  text-align: center; font-size: .9rem; font-weight: 800;
+  padding: 10px; border-radius: 10px; margin-top: 4px; display: none;
+}
+.spell-feedback.ok  { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.spell-feedback.err { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.spell-hint-row { text-align: center; margin-bottom: 10px; }
+.spell-hint-text { font-size: .78rem; color: var(--muted2); font-style: italic; }
+
+/* ── Print button ─────────────────────────────────────── */
+.print-btn { margin-left: 8px; }
+.header-star-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  body * { visibility: hidden; }
+  #printContainer, #printContainer * { visibility: visible; }
+  #printContainer { display: block !important; position: absolute; inset: 0; background: white; }
+}
+
+
+.flashcard-container {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+.flashcard-container.active {
+  display: block;
+}
+.flashcard-flip {
+  perspective: 1000px;
+  margin-bottom: 24px;
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid rgba(122,208,224,.3);
+  border-radius: 18px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  transform-style: preserve-3d;
+}
+.flashcard-inner:hover {
+  border-color: rgba(122,208,224,.6);
+  background: linear-gradient(160deg, rgba(14,34,48,.9), rgba(11,27,36,1));
+}
+.flashcard-label {
+  font-size: 0.72rem;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.flashcard-content {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--good);
+  line-height: 1.6;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-word-main {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--good);
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-pron {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+  font-style: italic;
+  margin: 6px 0;
+}
+.flashcard-pos-display {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6ef7c8;
+  background: rgba(110, 247, 200, 0.1);
+  border: 1px solid rgba(110, 247, 200, 0.3);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 6px 0;
+  min-height: 20px;
+}
+.flashcard-hear {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  cursor: pointer;
+  transition: all .15s;
+  margin-left: 8px;
+  display: inline-block;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(110, 247, 200, 0.15);
+  border: 1px solid rgba(110, 247, 200, 0.4);
+  color: #6ef7c8;
+  margin: 0 4px;
+}
+.badge-pos {
+  display: inline-block !important;
+  background: rgba(110, 247, 200, 0.15) !important;
+  border: 1px solid rgba(110, 247, 200, 0.4) !important;
+  color: #6ef7c8 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  margin: 0 4px !important;
+}
+.flashcard-hear:hover {
+  background: var(--good25);
+  border-color: var(--good);
+}
+.flashcard-pos {
+  display: inline-block;
+  background: rgba(122,208,224,.15);
+  border: 1px solid rgba(122,208,224,.4);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 8px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.flashcard-def-en {
+  font-size: 1.1rem;
+  color: rgba(231,251,255,.9);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.flashcard-def-zh {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.flashcard-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 12px;
+  font-style: italic;
+}
+.flashcard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.flashcard-progress {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+  min-width: 60px;
+}
+.flashcard-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+}
+.flashcard-btn:hover:not(:disabled) {
+  background: rgba(122,208,224,.2);
+  border-color: var(--s60);
+}
+.flashcard-btn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="wrapper">
+  <div class="app-header">
+    <h1>Words That Think: Literary Analysis Edition – The Great Gatsby</h1>
+    <div class="tagline">Every word is a close reading. Every sentence is analysis.</div>
+    <div class="book-credit">75 words &middot; 75 sentences &middot; F. Scott Fitzgerald's The Great Gatsby</div>
+    <div class="header-star-row">
+      <button class="header-badge" id="starredToggleBtn">⭐ Starred Words (<span id="starredCountHeader">0</span>)</button>
+      <button class="header-badge print-btn" id="printBtn" onclick="openPrintModal()">🖨️ Print</button>
+    </div>
+  </div>
+
+  <div class="group-nav">
+    <button class="nav-pill" id="prevGroupBtn">← Prev</button>
+    <div class="group-nav-center">
+      <div class="group-label">Group</div>
+      <div class="group-num" id="groupNumDisplay">1 / 10</div>
+      <div class="group-dots" id="groupDots"></div>
+    </div>
+    <button class="nav-pill" id="nextGroupBtn">Next →</button>
+  </div>
+
+  <div class="word-nav">
+    <button class="nav-pill" id="prevWordBtn">←</button>
+    <div class="word-nav-center">
+      <div class="word-counter">Word <span id="wordNumDisplay">1</span> / <span id="groupSizeDisplay">10</span></div>
+      <button class="icon-btn" id="starBtn" title="Star this word">☆</button>
+      <button class="icon-btn" id="speakBtn" title="Hear pronunciation">🔊</button>
+    </div>
+    <button class="nav-pill" id="nextWordBtn">Next →</button>
+  </div>
+
+  <div class="word-card" id="wordCard">
+    <div class="word-card-top">
+      <div class="word-left">
+        <div class="word-display" id="wordDisplay">—</div>
+        <div class="pron-row">
+          <span class="pron-text" id="pronDisplay">—</span>
+          <button class="speak-btn" id="speakBtn2">🔊 Hear it</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="definition-block">
+      <div class="def-en" id="defEn">—</div>
+      <div class="def-zh" id="defZh">—</div>
+    </div>
+
+    <div class="synan-block" id="synanBlock">
+      <div class="synan-group">
+        <div class="synan-label syn">Synonyms</div>
+        <div class="synan-chips" id="synChips"></div>
+      </div>
+      <div class="synan-group">
+        <div class="synan-label ant">Antonyms</div>
+        <div class="synan-chips" id="antChips"></div>
+      </div>
+    </div>
+
+    <div class="sentence-tab-row">
+      <button class="sent-tab active" id="tabNovel">📖 Meaning</button>
+      <button class="sent-tab" id="tabAI">💡 Use</button>
+      <button class="sent-tab" id="tabFlashcard">📇 Flashcard</button>
+    </div>
+
+    <div class="sentence-content" id="sentenceContent">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+        <div class="sent-en" id="sentEn" style="flex: 1;">—</div>
+        <button id="sentenceHearBtn" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById(\'sentEn\');if(e){let t=e.textContent;if(t&&t!==\'—\'){t=t.replace(/<[^>]*>/g,\'\');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <div class="sent-zh" id="sentZh" style="flex: 1;">—</div>
+        <button class="sent-hear-btn-zh" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById('sentZh');if(e){let t=e.textContent;if(t&&t!=='—'){t=t.replace(/<[^>]*>/g,'');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div class="sent-source" id="sentSource">—</div>
+    </div>
+
+    <div class="flashcard-container" id="flashcardContainer">
+      <div class="flashcard-nav">
+        <button class="flashcard-btn" id="flashPrevBtn" title="Previous card">← Prev</button>
+        <div class="flashcard-progress" id="flashProgress">1 / 10</div>
+        <button class="flashcard-btn" id="flashNextBtn" title="Next card">Next →</button>
+      </div>
+      <div class="flashcard-flip" id="flashFlip">
+        <div class="flashcard-inner" id="flashInner" onclick="toggleFlashcard()">
+          <div class="flashcard-label" id="flashLabel">Word</div>
+          <div class="flashcard-content" id="flashContent">—</div>
+          <div class="flashcard-hint">Tap to reveal</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="flashStarBtn" title="Star this word" style="margin-bottom: 14px;">⭐</button>
+    </div>
+
+    <div class="my-sentences-block">
+      <div class="my-sent-header">
+        <span class="my-sent-title">✍️ My Sentences</span>
+        <span class="my-sent-counter" id="mySentCounter">0 / 3</span>
+      </div>
+      <div class="my-sent-input-row">
+        <input type="text" class="my-sent-input" id="mySentInput"
+          placeholder="Write your own sentence using this word…"
+          autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="my-sent-save-btn" id="mySentSaveBtn">Save</button>
+      </div>
+      <div class="my-sent-list" id="mySentList"></div>
+    </div>
+  </div>
+
+  <div class="quiz-section" id="quizSection">
+    <div class="quiz-header" id="quizHeader">
+      <div class="quiz-header-left">
+        <div>
+          <div class="quiz-title">📝 Group Quiz</div>
+          <div class="quiz-subtitle" id="quizSubtitle">Part 1: Choose · Part 2: Spell</div>
+        </div>
+        <div class="quiz-score-badge" id="quizScoreBadge">—</div>
+      </div>
+      <div>
+        <span class="quiz-toggle-icon" id="quizToggleIcon">▾</span>
+      </div>
+    </div>
+    <div class="quiz-body" id="quizBody">
+      <div class="quiz-start-area" id="quizStartArea">
+        <div class="quiz-start-desc" id="quizStartDesc">Test yourself on Group 1. Fill in the blanks using words from this group.</div>
+        <button class="quiz-start-btn" id="quizStartBtn">Start Quiz</button>
+        <button class="quiz-skip-btn" id="quizSkipBtn">Skip</button>
+      </div>
+      <div id="quizQuestionArea" style="display:none;">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-q-num" id="quizQNum">Question 1 / 10</div>
+
+        <div id="quizPhase1">
+          <div class="quiz-phase-label">📖 Choose the word — Orwell's sentence</div>
+          <div class="quiz-sentence" id="quizSentence">—</div>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <div id="quizPhase2" style="display:none;">
+          <div class="quiz-phase-label">💡 Spell the word — AI example sentence</div>
+          <div class="quiz-sentence" id="qSpellSentence">—</div>
+          <div class="spell-boxes" id="qSpellBoxes"></div>
+          <div class="spell-input-row">
+            <input type="text" class="spell-input" id="qSpellInput"
+              placeholder="type the word…"
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button class="spell-check-btn" id="qSpellCheckBtn">Check</button>
+          </div>
+          <button class="spell-reveal-btn" id="qSpellRevealBtn">Show answer</button>
+          <div class="quiz-feedback" id="qSpellFeedback"></div>
+        </div>
+
+        <button class="quiz-next-btn" id="quizNextBtn" style="display:none;">Next →</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-result-score" id="quizResultScore">—</div>
+        <div class="quiz-result-label" id="quizResultLabel">—</div>
+        <div class="quiz-result-btns">
+          <button class="quiz-retry-btn" id="quizRetryBtn">↻ Retry Quiz</button>
+          <button class="quiz-skip-btn" id="quizCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starred-section" id="starredSection">
+    <div class="starred-header" id="starredHeader">
+      <div class="starred-header-left">
+        <div class="starred-title">⭐ Starred Words</div>
+        <div class="starred-count" id="starredCount">0</div>
+      </div>
+      <span class="quiz-toggle-icon" id="starredToggleIcon">▾</span>
+    </div>
+    <div class="starred-body" id="starredBody">
+      <div class="starred-list" id="starredList"></div>
+
+      <div class="starred-quiz-wrap" id="starredQuizWrap">
+        <div class="starred-quiz-divider"></div>
+        <div class="sq-start-area" id="sqStartArea">
+          <div class="sq-desc" id="sqDesc">Star 5 or more words to unlock your personal quiz.</div>
+          <button class="quiz-start-btn" id="sqStartBtn" style="display:none;">⭐ Quiz My Starred Words</button>
+          <div class="sq-unlock-hint" id="sqUnlockHint">(<span id="sqStarredCount">0</span> / 5 starred so far)</div>
+        </div>
+        <div id="sqQuestionArea" style="display:none;">
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="sqProgressFill"></div></div>
+          <div class="quiz-q-num" id="sqQNum">Question 1 / ?</div>
+          <div class="quiz-sentence" id="sqSentence">—</div>
+          <div class="quiz-choices" id="sqChoices"></div>
+          <div class="quiz-feedback" id="sqFeedback"></div>
+          <button class="quiz-next-btn" id="sqNextBtn">Next →</button>
+        </div>
+        <div class="quiz-result" id="sqResult" style="display:none;">
+          <div class="quiz-result-score" id="sqResultScore">—</div>
+          <div class="quiz-result-label" id="sqResultLabel">—</div>
+          <div class="quiz-result-btns">
+            <button class="quiz-retry-btn" id="sqRetryBtn">↻ Retry</button>
+            <button class="quiz-skip-btn" id="sqResetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com) for educational use · Words from The Great Gatsby (1925) by F. Scott Fitzgerald · Literary Analysis Edition</div>
+    <div class="footer-quote">“So we beat on, boats against the current, borne back ceaselessly into the past.”<br>Nick Carraway, The Great Gatsby (Chapter 9)</div>
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// PASTE YOUR COMPLETE VOCAB ARRAY HERE (ALL 100 WORDS)
+// ============================================================
+// ============================================================
+const BOOK_CONFIG = {
+  "title": "Words That Think: Literary Analysis Edition – The Great Gatsby",
+  "bookName": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": "1925",
+  "tagline": "Every word is a close reading. Every sentence is analysis."
+};
+const VOCAB = [
+  {
+    "word": "reserved",
+    "pron": "rɪˈzɜːrvd",
+    "def_en": "tending to keep one’s thoughts and feelings to oneself; restrained in manner",
+    "def_zh": "reserved manner, reserved personality, in a reserved way",
+    "quote_en": "\"He didn’t say any more but we’ve always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that.\" – Nick Carraway reflecting on his father’s advice about withholding judgment, establishing his narrative stance (Chapter 1)",
+    "quote_zh": "Fitzgerald’s use of ‘reserved’ describes the Carraway family’s guarded communication, a trait that defines Nick’s narratorial voice. The adverb ‘unusually’ underscores a paradox: they are communicative yet restrained, hinting at a need to connect without fully revealing themselves. The word aligns with the novel’s exploration of identity and performance. Nick’s reserved nature positions him as both insider and outsider, capable of observing Gatsby’s spectacular rise and fall with melancholy detachment. This quality foreshadows his ultimate disillusionment with the East’s moral chaos, as his Midwestern reserve cannot reconcile with the reckless extravagance around him.",
+    "ex_en": "Nick’s reserved observations enabled him to perceive the hollowness behind Daisy’s charm and Tom’s brutality.",
+    "ex_zh": "The old house sat reserved behind its iron fence, its shuttered windows like sealed lips guarding a lifetime of unspoken sorrows.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "privy",
+    "pron": "ˈprɪvi",
+    "def_en": "sharing in the knowledge of something secret or private",
+    "def_zh": "privy to, be privy to",
+    "quote_en": "\"I was privy to the secret griefs of wild, unknown men.\" – Nick Carraway describing his unintended role as a repository of others’ intimate confessions in college (Chapter 1)",
+    "quote_zh": "The adjective ‘privy’ carries legal and conspiratorial overtones, positioning Nick as an accidental keeper of secrets. His tone is ironic: he claims these confidences were unsought, yet the word implies a privileged access that will later become a moral burden. The secret griefs of random acquaintances prefigure the larger, more destructive secrets he will witness—Tom’s mistress, Gatsby’s bootlegging, Daisy’s culpability. By calling himself ‘privy,’ Nick suggests that knowledge is not power but a form of complicity, tying him to the corruption he observes.",
+    "ex_en": "Nick felt oddly privy to Gatsby’s dream, as if by listening he had been granted a share in its fragile beauty.",
+    "ex_zh": "The moon, privy to the night’s whispered conspiracies, poured silver light through the cracks of the old barn.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "epigram",
+    "pron": "ˈɛpɪɡræm",
+    "def_en": "a concise, clever, and often paradoxical statement or saying",
+    "def_zh": "witty epigram, clever epigram, coin an epigram",
+    "quote_en": "\"This isn’t just an epigram—life is much more successfully looked at from a single window, after all.\" – Nick Carraway dismissing his own literary ambitions while reflecting on the limits of broad-mindedness (Chapter 1)",
+    "quote_zh": "Nick employs ‘epigram’ to distance himself from the polished, false wisdom of the East Egg world. Yet his own narration is filled with epigrammatic moments—‘Gatsby turned out all right at the end’—revealing a tension between his disdain for easy formulas and his reliance on them. Fitzgerald uses the term to critique a culture that prefers witty surfaces to genuine depth. The novel ultimately questions whether any epigram can contain the messy, yearning heart of human experience, a doubt embodied in Gatsby’s famous and tragically wrong assertion that one can repeat the past.",
+    "ex_en": "Daisy’s voice was an epigram of money, each note a polished clue to the wealth that cushioned her from consequence.",
+    "ex_zh": "The old poet’s final epigram hung in the air like a falling star, brilliant and vanishing before it could be fully grasped.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "proximity",
+    "pron": "prɒkˈsɪməti",
+    "def_en": "nearness in space, time, or relationship",
+    "def_zh": "close proximity, in proximity to, proximity of",
+    "quote_en": "\"the consoling proximity of millionaires—all for eighty dollars a month.\" – Nick Carraway describing his modest house at West Egg, squeezed next to Gatsby’s mansion (Chapter 1)",
+    "quote_zh": "The phrase ‘consoling proximity’ captures Nick’s ambivalent class position: he is near wealth but not of it, comforted by its nearness yet aware of his own modest means. ‘Proximity’ here becomes a psychological crutch, suggesting that mere adjacency to power can soothe insecurity. This spatial metaphor extends throughout the novel: Gatsby buys his mansion for its proximity to Daisy, and the geography of East and West Egg symbolizes social closeness without true connection. The word foreshadows the disastrous consequences of mistaking physical nearness for emotional intimacy.",
+    "ex_en": "Gatsby’s purchased proximity to Daisy across the bay was his attempt to bridge the unbridgeable distance of time and class.",
+    "ex_zh": "In the hush of the cathedral, the proximity of the ancient stones made her feel both insignificant and eternal.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "turbulence",
+    "pron": "ˈtɜːrbjələns",
+    "def_en": "violent or unsteady movement; a state of confusion and disorder",
+    "def_zh": "emotional turbulence, atmospheric turbulence, political turbulence",
+    "quote_en": "\"the dramatic turbulence of some irrecoverable football game.\" – Nick Carraway speculating about the restless energy that drives Tom Buchanan (Chapter 1)",
+    "quote_zh": "Fitzgerald applies ‘turbulence’ to a long-finished football game, revealing Tom’s arrested development. The word’s connotations of chaotic, violent energy suggest that Tom seeks in adulthood the unambiguous physical dominance of sport. This inner turbulence manifests later in his brutality—breaking Myrtle’s nose, his aggressive postures toward Gatsby—showing that his inherited privilege cannot contain his need for control. The noun also hints at the larger social turbulence of the 1920s, a world of shifting morals that Tom tries to dominate with force and racist pseudo-science.",
+    "ex_en": "Beneath Daisy’s melodic voice lay a hidden turbulence she could never fully articulate.",
+    "ex_zh": "The ocean’s turbulence that night seemed to echo the restless fury of a god long forgotten by the shore.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "supercilious",
+    "pron": "ˌsuːpərˈsɪliəs",
+    "def_en": "behaving or looking as though one thinks one is superior to others",
+    "def_zh": "supercilious smile, supercilious attitude, supercilious manner",
+    "quote_en": "\"a rather hard mouth and a supercilious manner.\" – Nick Carraway’s first physical description of Tom Buchanan (Chapter 1)",
+    "quote_zh": "The adjective ‘supercilious’ derives from the Latin supercilium, ‘eyebrow,’ evoking the image of a raised brow of contempt. Fitzgerald embeds this bodily arrogance directly into Tom’s description, linking it to his ‘cruel body’ and establishing him as the novel’s emblem of entitled, bullying power. Tom’s superciliousness is unearned, a product of his class position and physical strength, not intelligence or character. The word taints all his interactions, from his dismissal of Nick’s bond business to his final, smug victory over Gatsby, and functions as a sharp critique of old‑money elitism.",
+    "ex_en": "Jordan Baker’s supercilious chin, always lifted slightly, was her armor against a world that might demand honesty.",
+    "ex_zh": "The chandelier hung with a supercilious glint, as if it knew the secrets of every jewel that had ever passed beneath it.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "conscientious",
+    "pron": "ˌkɒnʃiˈɛnʃəs",
+    "def_en": "wishing to do one’s work or duty thoroughly and carefully",
+    "def_zh": "conscientious effort, conscientious objector, conscientious student",
+    "quote_en": "\"she leaned slightly forward with a conscientious expression—then she laughed,\" – Nick Carraway describing Daisy’s exaggerated attempt to rise and greet him (Chapter 1)",
+    "quote_zh": "Daisy’s ‘conscientious expression’ is a fleeting performance—a carefully manufactured look of duty that is immediately undercut by an ‘absurd, charming little laugh.’ The word is deeply ironic: Daisy takes no real responsibility for anything beyond her own comfort. Fitzgerald uses this gesture of fake conscientiousness to expose the moral vacuum beneath her charm. It prefigures her later, catastrophic failure to act conscientiously after the hit‑and‑run, when she allows Gatsby to take the blame and then vanishes into her wealth.",
+    "ex_en": "Nick’s conscientious refusal to judge others gradually became a burden, as he realized some judgments were morally necessary.",
+    "ex_zh": "The old clockmaker’s conscientious hands moved over the gears, mending time with the patience of a saint.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "imperceptibly",
+    "pron": "ˌɪmpərˈsɛptəbli",
+    "def_en": "in a way that is so slight, gradual, or subtle as not to be perceived",
+    "def_zh": "move imperceptibly, change imperceptibly, almost imperceptibly",
+    "quote_en": "\"she nodded at me almost imperceptibly and then quickly tipped her head back again\" – Nick Carraway observing Jordan Baker’s minimal acknowledgment of his arrival (Chapter 1)",
+    "quote_zh": "Jordan’s ‘almost imperceptibly’ nod is a masterpiece of understated characterization. The adverb captures her cool detachment; her recognition is so slight it is nearly invisible, mirroring her moral evasiveness—she will later be revealed as a chronic liar and cheat. Fitzgerald uses the word to suggest a world where meaningful human connection is stretched so thin that gestures become ghosts. Nick, the careful observer, does notice, and this tiny detail underscores his role as the chronicler of minute but telling signals.",
+    "ex_en": "The change in Gatsby’s demeanor after Daisy’s arrival was almost imperceptible, unless one watched for the slight softening around his eyes.",
+    "ex_zh": "Autumn crept into the garden imperceptibly, a single yellow leaf falling like a secret the tree was keeping from summer.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "languidly",
+    "pron": "ˈlæŋɡwɪdli",
+    "def_en": "in a relaxed, unhurried manner, often suggesting laziness or lack of energy",
+    "def_zh": "move languidly, stretch languidly, lie languidly",
+    "quote_en": "\"Slenderly, languidly, their hands set lightly on their hips the two young women preceded us out onto a rosy‑colored porch\" – Nick Carraway describing Daisy and Jordan’s graceful, indolent movements (Chapter 1)",
+    "quote_zh": "Fitzgerald uses ‘languidly’ to paint Daisy and Jordan as ethereal beings, floating rather than walking, their movements as weightless as the white dresses they wear. The adverb evokes the ennui of the very wealthy, whose lives require no urgency or physical strain. It also feminizes their indolence, linking it to the novel’s critique of a class that drifts through existence without moral purpose. Their languid grace is seductive but ultimately hollow—a prelude to the moral inertia that allows them to retreat into their money after Gatsby’s death.",
+    "ex_en": "Gatsby reached languidly for his dream, unaware that it had already slipped beyond his grasp.",
+    "ex_zh": "The summer afternoon draped itself languidly over the garden, pressing the roses into a drowsy swoon.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "complacency",
+    "pron": "kəmˈpleɪsənsi",
+    "def_en": "a feeling of smug or uncritical satisfaction with oneself or one’s achievements",
+    "def_zh": "smug complacency, shake off complacency, with complacency",
+    "quote_en": "\"as if his complacency, more acute than of old, was not enough to him any more.\" – Nick Carraway interpreting Tom Buchanan’s inner restlessness (Chapter 1)",
+    "quote_zh": "Fitzgerald makes ‘complacency’ a pathology by pairing it with ‘acute.’ Tom’s self‑satisfaction is not peaceful but diseased—a condition that leaves him restless and searching for an outlet. The word exposes the hollowness of inherited privilege: Tom has everything, yet his complacency is not sustaining. The phrase foreshadows his violent reactions whenever his dominance is challenged, notably during the Plaza Hotel confrontation. Tom’s complacency is the smugness of a man who has never been genuinely threatened, and the novel charts its explosive unraveling.",
+    "ex_en": "The complacency of the East Egg set was a fortress built on the shifting sands of inherited wealth.",
+    "ex_zh": "The ancient oak’s complacency, rooted for centuries, was shattered by the lightning’s sudden, jealous kiss.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "extemporize",
+    "pron": "ɪkˈstɛmpəˌraɪz",
+    "def_en": "to compose, perform, or say something without preparation; improvise",
+    "def_zh": "extemporize a speech, extemporize on stage, extemporize an answer",
+    "quote_en": "\"She was only extemporizing but a stirring warmth flowed from her\" – Nick Carraway dismissing Daisy’s remark that he resembled ‘an absolute rose’ (Chapter 1)",
+    "quote_zh": "Nick dismisses Daisy’s flattery as ‘extemporizing,’ yet this verb captures the essence of her charm: the ability to create enchanting illusions on the spot. Daisy’s extemporizing is a survival mechanism in a world that demands constant performance from women. However, the word also hints at fundamental insincerity—her compliments are as fleeting and ungrounded as her voice. Fitzgerald suggests that for all its beauty, extemporizing cannot sustain genuine feeling; underneath Daisy’s spontaneous warmth lies emotional cowardice, as seen when she ultimately refuses to choose Gatsby over security.",
+    "ex_en": "Gatsby, too, was a master of extemporizing, transforming his humble origins into a gilded past with the ease of a practiced performer.",
+    "ex_zh": "The jazz musician closed his eyes and began to extemporize, his saxophone weaving a silver thread through the smoky midnight air.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "sedative",
+    "pron": "ˈsɛdətɪv",
+    "def_en": "having a calming or soothing effect",
+    "def_zh": "sedative effect, mild sedative, sedative music",
+    "quote_en": "\"I asked what I thought would be some sedative questions about her little girl\" – Nick Carraway trying to calm Daisy’s turbulent emotions with harmless small talk (Chapter 1)",
+    "quote_zh": "Nick’s choice of the adjective ‘sedative’ reveals his instinct to manage Daisy’s distress rather than confront it. The word suggests that their relationship is built on avoidance; conversation becomes a drug to ease discomfort. This small moment foreshadows the novel’s broader failure of genuine communication—characters use words not to connect but to anesthetize. Daisy’s own voice is described as a ‘singing compulsion’ that pulls listeners in; here, Nick attempts the opposite with banal questions, and the failure of this sedative tactic underscores the depth of Daisy’s pain.",
+    "ex_en": "Daisy’s laughter was a sedative for her own restlessness, a sound that temporarily smoothed the chaos beneath.",
+    "ex_zh": "The slow, rhythmic lap of the lake against the dock was a sedative for the boy’s frantic mind.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "cynical",
+    "pron": "ˈsɪnɪkəl",
+    "def_en": "believing that people are motivated purely by self‑interest; distrustful of human sincerity",
+    "def_zh": "cynical view, cynical attitude, deeply cynical",
+    "quote_en": "\"I’m pretty cynical about everything.\" – Daisy Buchanan confessing her disillusionment to Nick (Chapter 1)",
+    "quote_zh": "Daisy’s confession of cynicism is one of her rare moments of apparent honesty, yet it is also a performance of world‑weariness designed to elicit sympathy. Fitzgerald uses it to highlight the moral exhaustion of her class: they are cynical because they have seen too much and cared too little. Her cynicism is a shield against genuine feeling, but it also traps her in a sterile existence where even her daughter’s future is reduced to the wish for ‘a beautiful little fool.’ The word contrasts sharply with Gatsby’s relentless, almost stupid optimism, which is both his greatness and his doom.",
+    "ex_en": "Nick’s time in the East left him more cynical than he ever expected, stripping away his Midwestern faith in human decency.",
+    "ex_zh": "The battered streetlamp flickered with a cynical wink, as if it knew the night would never truly end.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "sophisticated",
+    "pron": "səˈfɪstɪkeɪtɪd",
+    "def_en": "having a great deal of worldly experience and knowledge of fashion and culture; complex and refined",
+    "def_zh": "sophisticated taste, highly sophisticated, sophisticated audience",
+    "quote_en": "\"Sophisticated—God, I’m sophisticated!\" – Daisy Buchanan exclaiming with ‘thrilling scorn’ to Nick (Chapter 1)",
+    "quote_zh": "Daisy’s self‑proclaimed sophistication is immediately undercut by Nick’s perception of her ‘basic insincerity.’ The word becomes a hollow badge of her class, a performance of wisdom rather than genuine depth. Fitzgerald uses it to critique the emptiness of East Egg’s cultural pretensions: their sophistication is merely a gloss on moral bankruptcy. In contrast, Gatsby acquires sophistication as a tool, yet it never fully conceals his essential naivety. The novel suggests that true sophistication is not a matter of style but of moral intelligence, a quality conspicuously absent from the Buchanans.",
+    "ex_en": "Gatsby’s parties were a monument to sophisticated excess, yet their host remained oddly untouched by the glittering world he created.",
+    "ex_zh": "The old library’s sophisticated silence, layered with the dust of centuries, seemed to whisper in languages only the moon could understand.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "intimation",
+    "pron": "ˌɪntɪˈmeɪʃən",
+    "def_en": "a hint or indirect suggestion",
+    "def_zh": "subtle intimation, first intimation, give an intimation",
+    "quote_en": "\"he gave a sudden intimation that he was content to be alone—he stretched out his arms toward the dark water in a curious way\" – Nick Carraway describing his first glimpse of Gatsby (Chapter 1)",
+    "quote_zh": "Fitzgerald uses ‘intimation’ to endow Gatsby’s mysterious gesture with profound, wordless significance. The noun suggests that meaning is being communicated without language—a private semaphore of longing that Nick cannot fully decode. This moment establishes Gatsby as a figure of inarticulate yearning, reaching toward the green light that will come to symbolize everything he desires. The intimation of solitude foreshadows his ultimate isolation: even surrounded by guests, Gatsby remains essentially alone, his true self hinted at but never revealed.",
+    "ex_en": "Nick’s first intimation of trouble came when he saw Tom’s hand tighten possessively around Myrtle’s wrist.",
+    "ex_zh": "The faint scent of jasmine on the evening air was an intimation of secrets the garden would only reveal after dark.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "oculist",
+    "pron": "ˈɒkjʊlɪst",
+    "def_en": "a doctor who specializes in eye health; an ophthalmologist",
+    "def_zh": "visit an oculist, oculist’s sign, oculist’s chair",
+    "quote_en": "\"Evidently some wild wag of an oculist set them there to fatten his practice in the borough of Queens\" – Nick Carraway explaining the origin of the giant eyes of Doctor T. J. Eckleburg in the valley of ashes (Chapter 2)",
+    "quote_zh": "The ‘oculist’ who erected the billboard is an absent creator, a figure of commercial hucksterism whose advertisement mutates into the novel’s most haunting symbol. Fitzgerald’s choice of this clinical term for an eye doctor underscores a bitter irony: the eyes are meant to advertise medical expertise, yet they become an ersatz God, watching without seeing or saving. The oculist’s abandonment of the sign parallels the moral neglect of the characters, who refuse to see the consequences of their actions. In a world without divine justice, the oculist’s creation remains a silent, unblinking witness, both an accusation and a void.",
+    "ex_en": "The forgotten oculist’s billboard presided over the ash heaps like a deity whose only remaining power was to watch.",
+    "ex_zh": "The old oculist’s spectacles, abandoned on a dusty counter, still seemed to probe the empty air for some lost patient.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "proprietary",
+    "pron": "prəˈpraɪəˌtɛri",
+    "def_en": "relating to owning something; behaving as if one owns something",
+    "def_zh": "proprietary interest, proprietary attitude, proprietary air",
+    "quote_en": "\"She came in with such a proprietary haste and looked around so possessively at the furniture that I wondered if she lived here.\" – Nick Carraway observing Myrtle’s sister Catherine at the New York apartment (Chapter 2)",
+    "quote_zh": "Catherine’s ‘proprietary haste’ reveals the grasping, performative nature of Myrtle’s social circle, where status is projected through exaggerated ownership. The word hints at the novel’s larger obsession with possession: Tom treats Daisy as a possession, Gatsby seeks to own the past by possessing Daisy, and Myrtle tries to claim Tom. Fitzgerald uses ‘proprietary’ to expose the hollowness of such claims—no one truly owns anything in this world of borrowed apartments and stolen hearts. Catherine’s performance is a mockery of the genuine proprietors, the old‑money class who need never demonstrate their ownership so eagerly.",
+    "ex_en": "Tom’s proprietary grip on Daisy’s arm left no doubt that he considered her his personal property.",
+    "ex_zh": "The stray cat padded across the marble floor with a proprietary grace, as if the entire mansion were its birthright.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "hauteur",
+    "pron": "həʊˈtɜːr",
+    "def_en": "haughtiness of manner; disdainful pride",
+    "def_zh": "with hauteur, display hauteur, cool hauteur",
+    "quote_en": "\"The intense vitality that had been so remarkable in the garage was converted into impressive hauteur.\" – Nick Carraway describing Myrtle Wilson’s transformation after she changes into a cream‑colored dress (Chapter 2)",
+    "quote_zh": "Fitzgerald uses ‘hauteur’ to show that arrogance, for Myrtle, is a costume she dons with her dress. The word’s French origin adds a layer of pretension, mocking her aspiration to the sophistication of the elite she yearns to join. Yet Myrtle’s hauteur is fragile, easily shattered by Tom’s violence when she mentions Daisy’s name. This moment encapsulates the novel’s critique of social mobility: those who imitate the upper classes achieve only a vulgar mimicry of their cruelty, never their security.",
+    "ex_en": "Daisy’s murmured invitations carried a natural hauteur, as if she expected the world to bend toward her without effort.",
+    "ex_zh": "The old portrait’s subject gazed down with a hauteur that defied time, her painted eyes still commanding the room.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "mincing",
+    "pron": "ˈmɪnsɪŋ",
+    "def_en": "affectedly dainty or refined in speech or manner",
+    "def_zh": "mincing steps, mincing voice, mincing walk",
+    "quote_en": "\"she told her sister in a high mincing shout\" – Nick Carraway describing Myrtle’s affected voice during the apartment party (Chapter 2)",
+    "quote_zh": "‘Mincing’ and ‘shout’ form a jarring paradox: a shout cannot be dainty, yet Fitzgerald uses the adjective to highlight the grotesque artificiality of Myrtle’s attempt at refinement. Her voice fractures into a ‘high mincing shout,’ a hybrid of her raw, vital energy and her desperate social aspirations. The word captures a body and voice out of sync, mirroring the novel’s broader theme of identity as a fragile performance. Myrtle is forever mincing toward a social station she cannot truly occupy, and her violent death, crushed by the machine of that very world, is the tragic consequence.",
+    "ex_en": "Gatsby’s carefully mincing enunciation of ‘old sport’ was a verbal costume he wore to erase James Gatz of North Dakota.",
+    "ex_zh": "The tiny bird hopped along the garden wall with mincing, delicate steps, pretending it was not a scavenger at heart.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "prodigality",
+    "pron": "ˌprɒdɪˈɡælɪti",
+    "def_en": "lavish abundance; wasteful extravagance",
+    "def_zh": "with prodigality, spend with prodigality, reckless prodigality",
+    "quote_en": "\"Laughter is easier, minute by minute, spilled with prodigality, tipped out at a cheerful word.\" – Nick Carraway describing the atmosphere at Gatsby’s party (Chapter 3)",
+    "quote_zh": "Fitzgerald uses ‘prodigality’ to evoke the senseless, abundant waste of Gatsby’s parties, where even laughter is thrown away like confetti. The word echoes the parable of the Prodigal Son, suggesting a wasteful homecoming that goes unrecognized. Gatsby’s prodigality is a performance designed to attract Daisy, but it results in hollow, anonymous revelry. The term’s moral weight hints at the spiritual bankruptcy hidden behind the champagne and music; the prodigal expenditure of money and emotion yields no genuine human connection.",
+    "ex_en": "Gatsby’s prodigality was an offering to Daisy, a desperate shrine of crystal and gold built on the hope that she might wander through.",
+    "ex_zh": "Autumn scattered its leaves with the prodigality of a miser who suddenly forgot his wealth.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "vehemently",
+    "pron": "ˈviːɪməntli",
+    "def_en": "in a forceful, passionate, or intense manner; with great feeling",
+    "def_zh": "deny vehemently, argue vehemently, protest vehemently",
+    "quote_en": "\"the two or three people of whom I asked his whereabouts stared at me in such an amazed way and denied so vehemently any knowledge of his movements\" – Nick Carraway trying to locate Gatsby at his own party (Chapter 3)",
+    "quote_zh": "The adverb ‘vehemently’ signals an exaggerated, almost desperate denial, hinting at the collective conspiracy of silence around Gatsby’s identity. The partygoers’ fervent ignorance mirrors the novel’s larger mystery: everyone enjoys Gatsby’s hospitality while knowing nothing about him. Fitzgerald uses this word to build the aura of enigma, suggesting that the denial is a performance protecting Gatsby’s mystique—and that perhaps his guests fear unraveling the illusion if they speak too much.",
+    "ex_en": "Tom vehemently insisted on his own superiority, drowning out any whisper of Gatsby’s legitimacy.",
+    "ex_zh": "The old gate creaked vehemently, protesting the intrusion of the unwelcome storm.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "staid",
+    "pron": "steɪd",
+    "def_en": "sedate, respectable, and unadventurous",
+    "def_zh": "staid appearance, staid demeanor, staid institution",
+    "quote_en": "\"assumed to itself the function of representing the staid nobility of the countryside\" – Nick Carraway describing the East Egg group at Gatsby’s party who cling to their dignified separateness (Chapter 3)",
+    "quote_zh": "Fitzgerald applies ‘staid’ with heavy irony to the East Egg contingent, who brandish their respectability as a weapon against West Egg’s ‘spectroscopic gaiety.’ The adjective reveals that their staidness is a mask: beneath the dignified surface, the East Eggers are just as morally corrupt and decadent. This word exposes the hypocrisy of old money, which uses propriety to maintain social distance while engaging in its own secret betrayals. The contrast between the ‘staid nobility’ and the wild party around them encapsulates the novel’s central theme of appearance versus reality.",
+    "ex_en": "Nick’s staid Midwestern values crumbled in the face of the East’s glittering corruption.",
+    "ex_zh": "The old library, with its staid oak panels and hushed aisles, seemed to resent the intrusion of the laughing lovers.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "impetuously",
+    "pron": "ɪmˈpɛtʃuəsli",
+    "def_en": "acting or done quickly and without thought or care; impulsively",
+    "def_zh": "act impetuously, speak impetuously, rush impetuously",
+    "quote_en": "\"‘What do you think?’ he demanded impetuously.\" – The man with owl‑eyed spectacles confronting Jordan and Nick in Gatsby’s library (Chapter 3)",
+    "quote_zh": "The owl‑eyed man’s ‘impetuous’ demand captures the unguarded, almost childlike curiosity that Gatsby’s parties briefly unleash. The adverb suggests a mind rushing toward insight without caution, and indeed this drunken guest stumbles upon one of the novel’s rare truths: Gatsby’s books are real but uncut. Fitzgerald contrasts such momentary impetuosity with the careful, guarded performances of the major characters. The owl‑eyed man’s fleeting flash of insight prefigures the novel’s lament for a world that has forgotten how to believe in anything genuine.",
+    "ex_en": "Gatsby impetuously offered to take the blame for Daisy’s carelessness, sealing his own fate in a single reckless heartbeat.",
+    "ex_zh": "The young river rushed impetuously over the stones, chasing the spring thaw with a passion that winter could not tame.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "vacuous",
+    "pron": "ˈvækjuəs",
+    "def_en": "having or showing a lack of thought or intelligence; mindless",
+    "def_zh": "vacuous expression, vacuous laughter, vacuous comment",
+    "quote_en": "\"happy vacuous bursts of laughter rose toward the summer sky\" – Nick Carraway describing the mindless hilarity at Gatsby’s party (Chapter 3)",
+    "quote_zh": "‘Vacuous’ reduces the partygoers’ laughter to an empty sound, devoid of genuine joy or meaning. Fitzgerald uses the adjective to indict the spiritual emptiness of the Jazz Age: the guests consume champagne and entertainment without any deeper engagement. The word links to the novel’s theme of moral vacuum. The laughter is an escape from meaning, just as the party is an escape from the ash heaps visible only a few miles away. These vacuous relationships—between Gatsby and his guests, between Tom and Myrtle—are ultimately filled with violence and tragedy.",
+    "ex_en": "Daisy’s vacuous chatter about her ‘beautiful little fool’ masked a despair she could never fully voice.",
+    "ex_zh": "The sky that morning was a vacuous blue, as if all the weather’s passion had been drained into the previous night’s storm.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "provincial",
+    "pron": "prəˈvɪnʃəl",
+    "def_en": "of or concerning the provinces; unsophisticated or narrow‑minded",
+    "def_zh": "provincial attitude, provincial upbringing, provincial town",
+    "quote_en": "\"in my provincial inexperience I believed they didn’t\" – Nick Carraway reflecting on his assumption that young men could not simply appear from nowhere and buy palaces (Chapter 3)",
+    "quote_zh": "Nick calls his own perspective ‘provincial’ with gentle self‑mockery, acknowledging his Midwestern naivety. Yet this very provincialism is what makes him a reliable narrator, as he remains untainted by the East’s sophisticated corruption. Fitzgerald uses the word to establish the central tension between the heartland’s supposed simplicity and the coast’s cynical glamour. However, the novel subtly subverts this binary: the Westerners—Tom, Daisy, Gatsby—are all themselves products of provincial origins, yet they bring destruction with them to the East.",
+    "ex_en": "Gatsby’s provincial shame about his origins drove him to erase James Gatz and invent a new, glittering self.",
+    "ex_zh": "The city’s lights seemed to mock the provincial moon, which had never seen anything more daring than a sleepy village lane.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "convivial",
+    "pron": "kənˈvɪviəl",
+    "def_en": "friendly, lively, and enjoyable; fond of good company and festivity",
+    "def_zh": "convivial atmosphere, convivial gathering, convivial laughter",
+    "quote_en": "\"in a puppyish, convivial way\" – Nick Carraway describing how girls at Gatsby’s party swooned into men’s arms (Chapter 3)",
+    "quote_zh": "‘Convivial’ typically describes warm sociability, but Fitzgerald pairs it with ‘puppyish,’ infantilizing the guests. Their friendliness is instinctive, not chosen, and therefore ultimately empty. The adjective’s Latin root (convivium, feast) connects to the ritual consumption of Gatsby’s hospitality, which feeds no lasting bond. The conviviality is a performance of community without substance, a hollow echo of the genuine human warmth that the novel’s lonely protagonist craves but never attains.",
+    "ex_en": "Nick’s convivial evenings with Jordan masked an increasing unease about her fundamental dishonesty.",
+    "ex_zh": "The old hearth, once the convivial heart of the cottage, now held only ashes and the ghosts of stories long forgotten.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "dissension",
+    "pron": "dɪˈsɛnʃən",
+    "def_en": "disagreement that leads to discord; strong quarreling",
+    "def_zh": "sow dissension, cause dissension, political dissension",
+    "quote_en": "\"Even Jordan’s party, the quartet from East Egg, were rent asunder by dissension.\" – Nick Carraway observing the marital arguments among Gatsby’s guests (Chapter 3)",
+    "quote_zh": "Fitzgerald uses ‘dissension’ to expose the cracks beneath the party’s polished surface. The word’s formal register—suggesting serious political or religious conflict—elevates the petty bickering of the East Egg quartet into a symptom of larger moral decay. This dissension among guests mirrors the novel’s central conflict between Gatsby and Tom, and more broadly between illusion and reality. By the night’s end, dissension escalates into physical violence, as Tom breaks Myrtle’s nose, literalizing the destructive potential of unresolved discord.",
+    "ex_en": "The dissension between Gatsby and Tom was not merely romantic rivalry but a clash of two incompatible Americas.",
+    "ex_zh": "The old forest, once a chorus of birdsong, now held only dissension—the crows and the finches arguing over the corpse of a grand oak.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "tumultuous",
+    "pron": "tjuːˈmʌltʃuəs",
+    "def_en": "making a loud, confused noise; disorderly and turbulent",
+    "def_zh": "tumultuous applause, tumultuous crowd, tumultuous emotions",
+    "quote_en": "\"a bizarre and tumultuous scene\" – Nick Carraway describing the car accident that ends Gatsby’s party (Chapter 3)",
+    "quote_zh": "‘Tumultuous’ vividly captures the chaotic spectacle of the crash, a literal wreck that foreshadows the novel’s fatal hit‑and‑run. Fitzgerald turns the word’s energy outward, creating a scene of disorder that distracts from the deeper emotional turmoil of the evening. The accident symbolizes the recklessness of the age: wealthy people, drunk and careless, destroying property without consequence. The tumultuous noise contrasts with the polished order of East Egg, revealing that dissolution is not confined to the valley of ashes.",
+    "ex_en": "Nick’s tumultuous feelings for Jordan blended fascination with growing disgust, a storm he could neither navigate nor ignore.",
+    "ex_zh": "The sea’s tumultuous roar that night seemed to carry the voices of every sailor who had ever drowned before.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "affectation",
+    "pron": "ˌæfɛkˈteɪʃən",
+    "def_en": "behavior, speech, or writing that is artificial and designed to impress",
+    "def_zh": "mere affectation, affectation of style, without affectation",
+    "quote_en": "\"Most affectations conceal something eventually\" – Nick Carraway’s reflection on Jordan Baker’s dishonesty and the social masks people wear (Chapter 3)",
+    "quote_zh": "Nick’s aphorism becomes a master key to the novel’s exploration of identity. Fitzgerald uses ‘affectation’ to diagnose the social performances of every major character: Gatsby’s Oxford manner, Daisy’s thrilling murmur, Tom’s intellectual pretensions. The word suggests that beneath every pose lies a wound or a void—Gatsby’s shame, Daisy’s despair, Tom’s fear of insignificance. The novel argues that in a world of surface values, affectation is necessary for survival, yet it also poisons the possibility of genuine human connection.",
+    "ex_en": "Gatsby’s elaborate formality was an affectation crafted to convince himself as much as the world that he belonged.",
+    "ex_zh": "The art forger’s masterpiece was perfect in every detail except for a faint affectation of age, a subtle yellowing that smelled of tea and lies.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "subterfuge",
+    "pron": "ˈsʌbtərˌfjuːdʒ",
+    "def_en": "deceit used in order to achieve one’s goal; a deceptive stratagem",
+    "def_zh": "use subterfuge, resort to subterfuge, clever subterfuge",
+    "quote_en": "\"she had begun dealing in subterfuges when she was very young\" – Nick Carraway analyzing Jordan Baker’s ingrained dishonesty (Chapter 3)",
+    "quote_zh": "Fitzgerald uses ‘subterfuge’ to define Jordan’s moral character, tracing her dishonesty to a primal need for control. The word’s military connotations (from Latin subterfugere, to flee secretly) link her cheating to the novel’s larger pattern of evasion. Jordan’s subterfuges—moving her golf ball, lying about the borrowed car—are petty, but they mirror the grand deceptions of Gatsby’s fabricated past and Tom’s secret mistress. The novel suggests that a society built on appearances breeds subterfuge as a necessary survival skill.",
+    "ex_en": "Gatsby’s entire existence was a necessary subterfuge, a glittering mask to win back a love that could not survive the truth.",
+    "ex_zh": "The moon, a master of subterfuge, hid behind a cloud to listen to the lovers’ whispered plans.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "sporadic",
+    "pron": "spəˈrædɪk",
+    "def_en": "occurring at irregular intervals; not continuous or steady",
+    "def_zh": "sporadic fighting, sporadic efforts, sporadic bursts",
+    "quote_en": "\"the formless grace of our nervous, sporadic games\" – Nick Carraway describing the physical restlessness that underpinned Gatsby’s elegant manner (Chapter 4)",
+    "quote_zh": "Fitzgerald uses ‘sporadic’ to capture the disjointed, unpredictable energy that lies beneath Gatsby’s polished surface. The adjective links to the protagonist’s erratic life trajectory—his sudden rises and falls, his sporadic attempts at legitimacy. It also hints at the irregular rhythm of his emotions, which lurch from prolonged waiting to moments of intense, almost desperate focus. The word positions Gatsby as an emblem of the Jazz Age itself: a period of frantic, irregular activity that lacked sustaining purpose and coherence.",
+    "ex_en": "Gatsby’s sporadic appearances at his own parties made him seem less a host than a ghost haunting the margins of his own fantasy.",
+    "ex_zh": "The old lighthouse cast sporadic beams across the black water, each flash a desperate question no ship would answer.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "punctilious",
+    "pron": "pʌŋkˈtɪliəs",
+    "def_en": "showing great attention to detail or correct behavior; precise in conduct",
+    "def_zh": "punctilious care, punctilious observance, punctilious manner",
+    "quote_en": "\"This quality was continually breaking through his punctilious manner in the shape of restlessness.\" – Nick Carraway observing Gatsby’s carefully maintained formality (Chapter 4)",
+    "quote_zh": "‘Punctilious’ captures Gatsby’s meticulous performance of gentility—his every word and gesture calculated to erase James Gatz. Yet Fitzgerald immediately shows this quality to be fragile, ‘continually breaking through’ with nervous energy. The tension between punctilious control and sporadic restlessness embodies the novel’s central tragedy: Gatsby’s dream requires absolute self‑discipline, but human nature refuses such neat containment. His punctilious manner is a dam that must, and does, break.",
+    "ex_en": "Nick’s punctilious honesty, his insistence on his own decency, seemed a fragile shield against the moral squalor he witnessed.",
+    "ex_zh": "The butler arranged the silverware with punctilious precision, as if the alignment of forks could stave off the family’s ruin.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "disconcerting",
+    "pron": "ˌdɪskənˈsɜːrtɪŋ",
+    "def_en": "causing one to feel unsettled or uneasy",
+    "def_zh": "disconcerting news, disconcerting habit, find disconcerting",
+    "quote_en": "\"that disconcerting ride\" – Nick Carraway referring to the car journey during which Gatsby begins to reveal his supposed past (Chapter 4)",
+    "quote_zh": "Nick labels the ride ‘disconcerting’ because Gatsby’s confession forces him to confront the possibility that the wild rumors might be partly true. The word’s prefix ‘dis‑‘ suggests a shattering of harmony, a sense of comfortable assumptions being disrupted. This unsettling encounter—full of swallowed phrases and suspicious documents—prefigures the larger, more violent disruptions to come, when the careful order of Nick’s summer will be shattered by exposure and death.",
+    "ex_en": "The disconcerting smile on Gatsby’s face, both reassuring and predatory, left Nick unsure whether he was in the presence of a friend or a con man.",
+    "ex_zh": "The empty school hallway had a disconcerting way of making footsteps sound like secrets being traded in the dark.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "evasion",
+    "pron": "ɪˈveɪʒən",
+    "def_en": "the action of avoiding or escaping something; a statement that avoids directly answering",
+    "def_zh": "tax evasion, use evasion, deliberate evasion",
+    "quote_en": "\"I began the generalized evasions which that question deserves.\" – Nick Carraway responding when Gatsby asks for his opinion (Chapter 4)",
+    "quote_zh": "Nick’s ‘generalized evasions’ mirror the novel’s characteristic mode of communication, where direct speech is perpetually dodged. Fitzgerald uses the word to highlight the narrator’s own complicity in the culture of deceit; even the self‑proclaimed ‘honest’ Nick resorts to evasion. Gatsby’s entire life is built on evasion of his origins, Daisy evades responsibility, and Tom evades accountability. The novel suggests that this collective habit of evasion is the corrosive force that allows tragedy to unfold unchecked.",
+    "ex_en": "Daisy’s evasion of responsibility after the accident revealed the moral vacuum at the center of her charm.",
+    "ex_zh": "The fog rolled in with the evasion of a thief, stealing the coastline one inch at a time.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "retribution",
+    "pron": "ˌrɛtrɪˈbjuːʃən",
+    "def_en": "punishment inflicted on someone as vengeance for a wrong or criminal act",
+    "def_zh": "divine retribution, fear of retribution, exact retribution",
+    "quote_en": "\"His right hand suddenly ordered divine retribution to stand by.\" – Nick Carraway describing Gatsby’s melodramatic gesture as he prepares to reveal ‘God’s truth’ about his past (Chapter 4)",
+    "quote_zh": "Gatsby’s theatrical invocation of ‘divine retribution’ is a clue to his self‑mythologizing. He casts himself as a prophet about to speak truth, yet his truth is laced with fabrication. The word’s heavy religious weight calls attention to the novel’s absent God, replaced by the unblinking eyes of Doctor T. J. Eckleburg. True retribution in the novel comes not from divine judgment but from the blind machinery of the careless rich: Wilson’s avenging hand, Gatsby’s mistaken murder.",
+    "ex_en": "Wilson’s murder of Gatsby was a misguided retribution, a terrible justice that punished the wrong man for the sins of the wealthy.",
+    "ex_zh": "The old clock tower tolled midnight with the voice of retribution, each chime a reckoning the town had long avoided.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "threadbare",
+    "pron": "ˈθrɛdˌbɛər",
+    "def_en": "(of cloth) becoming thin and tattered with age; (of an idea or phrase) overused and unoriginal",
+    "def_zh": "threadbare carpet, threadbare excuses, threadbare cliché",
+    "quote_en": "\"The very phrases were worn so threadbare that they evoked no image\" – Nick Carraway’s skeptical reaction to Gatsby’s romanticized account of his life (Chapter 4)",
+    "quote_zh": "Nick dismisses Gatsby’s story as ‘threadbare,’ exposing the central contradiction: Gatsby’s dream is both magnificent and tawdry, a grand vision stitched together from worn‑out tropes. The adjective, rooted in fraying fabric, suggests that Gatsby has rehearsed this narrative so often it has lost its power—yet Nick is also strangely moved, because the threadbare quality signals vulnerability as well as fraud. Fitzgerald implies that the American Dream itself has become a threadbare narrative, its promises faded, yet people still cling to its fabric.",
+    "ex_en": "The threadbare idealism of the West proved no match for the hard, glittering pragmatism of the East.",
+    "ex_zh": "The old man’s threadbare coat told more stories than his mouth ever would, each frayed seam a season of sacrifice.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "engrossed",
+    "pron": "ɪnˈɡroʊst",
+    "def_en": "having all one’s attention or interest absorbed by someone or something",
+    "def_zh": "engrossed in, completely engrossed, engrossed conversation",
+    "quote_en": "\"They were so engrossed in each other that she didn’t see me until I was five feet away.\" – Jordan Baker recalling the first time she saw Daisy with Jay Gatsby in 1917 (Chapter 4)",
+    "quote_zh": "Jordan’s memory of Daisy and Gatsby ‘engrossed in each other’ establishes the total mutual absorption that defined their early love. The participle captures the novel’s central theme of obsession: Gatsby’s whole life becomes engrossed in the project of reclaiming that moment of complete focus. Fitzgerald shows how such single‑minded devotion can be both beautiful and self‑destructive, leaving no room for reality or growth. The tragedy is that while Gatsby remains engrossed in the past, Daisy has long since moved on, her attention now distributed among the easy comforts of wealth and security.",
+    "ex_en": "Nick became engrossed in Gatsby’s story, losing himself in the mystery of a man who was, in the end, unknowable.",
+    "ex_zh": "The old scholar was so engrossed in his manuscript that he did not notice the library burning down around him, page by page.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "pomp",
+    "pron": "pɒmp",
+    "def_en": "ceremonial splendor or magnificent display",
+    "def_zh": "pomp and circumstance, with pomp, royal pomp",
+    "quote_en": "\"In June she married Tom Buchanan of Chicago with more pomp and circumstance than Louisville ever knew before.\" – Jordan Baker describing Daisy’s lavish wedding (Chapter 4)",
+    "quote_zh": "Fitzgerald uses ‘pomp’ to describe Daisy’s wedding, but the image of grandeur is immediately undercut by the recollection of Daisy drunk and sobbing, clutching a letter from Gatsby. The juxtaposition reveals the hollowness of social ceremony; the external splendor masks profound inner misery. The word reappears in the lavish parties and mansions of the novel, all puffery disguising spiritual emptiness. This pomp is the language of Tom Buchanan’s world—the gilded armor of wealth that protects its inhabitants from consequence.",
+    "ex_en": "Gatsby’s mansion, for all its pomp, was only a stage set designed to attract a single audience member who never stayed.",
+    "ex_zh": "The sunset arrived with unexpected pomp, draping the horizon in banners of gold and purple that no king could afford.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "heady",
+    "pron": "ˈhɛdi",
+    "def_en": "having a strong or exhilarating effect; intoxicating",
+    "def_zh": "heady perfume, heady mixture, heady excitement",
+    "quote_en": "\"A phrase began to beat in my ears with a sort of heady excitement: ‘There are only the pursued, the pursuing, the busy and the tired.’\" – Nick Carraway’s revelation as he holds Jordan in Central Park (Chapter 4)",
+    "quote_zh": "Nick’s ‘heady excitement’ captures the intoxicating allure of the East’s glamour and cynicism. The word’s alcoholic connotation links to the novel’s pervasive drinking, from Tom’s whiskey to the fountains of champagne at Gatsby’s. This excitement is a substitute for genuine feeling, a buzz that numbs moral reflection. Fitzgerald uses it to show how Nick is seduced, however temporarily, by the very world he will later condemn. The phrase that follows is the novel’s own epigrammatic heart—a heady simplification of human striving that is both profound and reductive.",
+    "ex_en": "Gatsby’s heady belief in the green light obscured the simple truth that Daisy was, at best, a flickering hope.",
+    "ex_zh": "The scent of magnolia was so heady that it seemed to pull the stars down from the sky, one drowsy breath at a time.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "facade",
+    "pron": "fəˈsɑːd",
+    "def_en": "the principal front of a building; an outward appearance maintained to conceal a less pleasant reality",
+    "def_zh": "stone facade, behind the facade, maintain a facade",
+    "quote_en": "\"Then the facade of Fifty‑ninth Street, a block of delicate pale light, beamed down into the park.\" – Nick Carraway describing the cityscape as he and Jordan ride through the evening (Chapter 4)",
+    "quote_zh": "Fitzgerald uses ‘facade’ to describe the street’s architectural front of light, immediately evoking the novel’s preoccupation with surfaces and hidden truths. Every major character maintains a facade: Gatsby’s Oxford pretense, Daisy’s beguiling voice, Tom’s intellectual bravado. The city itself is a facade of lights and promise, behind which lurks the valley of ashes and moral decay. This delicate pale facade will eventually crumble, as the violence of the accident and its aftermath strips away all pretense.",
+    "ex_en": "Beneath Gatsby’s facade of careless wealth was a man still trembling with the hope that his five‑year vigil would be rewarded.",
+    "ex_zh": "The abandoned theater’s crumbling facade still held the ghost of applause, a faint echo of glamour trapped in the stone.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "distraught",
+    "pron": "dɪˈstrɔːt",
+    "def_en": "deeply upset and agitated; troubled",
+    "def_zh": "distraught with grief, distraught parents, distraught expression",
+    "quote_en": "\"his distraught eyes stared down at Daisy who was sitting frightened but graceful on the edge of a stiff chair\" – Nick Carraway describing Gatsby’s anguished state during the reunion at Nick’s house (Chapter 5)",
+    "quote_zh": "Gatsby’s ‘distraught eyes’ dismantle the confident persona he has so painstakingly constructed, exposing the raw vulnerability of a man who has wagered everything on a single moment. Fitzgerald uses the adjective to reveal that Gatsby’s magnificent dream is, beneath the surface, a source of acute psychological pain. This anguish humanizes him, making him more than a cipher of wealth and mystery. Yet it also foreshadows the fragility of his happiness; the distraught state will return with crushing force after the Plaza Hotel confrontation.",
+    "ex_en": "Nick was distraught by the silence after Gatsby’s death, a void that no one seemed willing to fill.",
+    "ex_zh": "The piano’s last chord hung distraught in the air, unable to decide whether it was an ending or a promise.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "vestige",
+    "pron": "ˈvɛstɪdʒ",
+    "def_en": "a trace or remnant of something that is disappearing or no longer exists",
+    "def_zh": "last vestige, remaining vestige, without a vestige",
+    "quote_en": "\"every vestige of embarrassment was gone\" – Nick Carraway observing the transformed atmosphere after Gatsby and Daisy reconnect in his living room (Chapter 5)",
+    "quote_zh": "The disappearance of ‘every vestige of embarrassment’ signals the triumphant, if temporary, erasure of the five‑year gap separating Gatsby from his dream. Yet the word ‘vestige’ implies a residue of something that has decayed—an embarrassment merely hidden, not eliminated. Fitzgerald’s choice suggests that the awkwardness will resurface, as it does when Tom forces the confrontation at the Plaza. The novel is full of vestiges: the green light, the ash heaps, the billboard eyes—all traces of something larger and now lost.",
+    "ex_en": "After the funeral, the last vestige of Gatsby’s empire was the unswept confetti on the lawn.",
+    "ex_zh": "The old love letters were the only vestige of a passion that had once blazed like a summer storm.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "exultation",
+    "pron": "ˌɛksəlˈteɪʃən",
+    "def_en": "a feeling of triumphant elation or jubilation; rejoicing",
+    "def_zh": "shout with exultation, feeling of exultation, wild exultation",
+    "quote_en": "\"without a word or a gesture of exultation a new well‑being radiated from him and filled the little room\" – Nick Carraway describing Gatsby’s quiet, profound joy after the successful reunion (Chapter 5)",
+    "quote_zh": "Gatsby’s lack of any ‘exultation’ is remarkable precisely because it defies expectation; his joy is too immense for celebration. Fitzgerald’s noun captures a quiet, radiant saturation of happiness that surpasses mere excitement. Yet this restraint hints at the fragility of his achievement—it is a held breath rather than a release. The absence of exultation suggests that Gatsby knows, on some submerged level, that this moment cannot last. It is the sublime calm before the novel’s violent unraveling.",
+    "ex_en": "There was no exultation in Tom’s victory at the Plaza, only the grim satisfaction of a bully reclaiming his possession.",
+    "ex_zh": "The lone violinist’s final note was not exultation but a quiet, trembling hymn to the beauty of grief.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "nebulous",
+    "pron": "ˈnɛbjələs",
+    "def_en": "in the form of a cloud or haze; vague, ill‑defined",
+    "def_zh": "nebulous concept, nebulous figure, nebulous color",
+    "quote_en": "\"sneakers and duck trousers of a nebulous hue\" – Nick Carraway describing Klipspringer’s shabby, indeterminate clothing (Chapter 5)",
+    "quote_zh": "Fitzgerald’s comic ‘nebulous’ applied to a pair of trousers reduces Klipspringer to a figure without clear edges, a permanent boarder who drifts through Gatsby’s mansion like a ghost. The adjective echoes the novel’s larger theme of indistinct identity: Gatsby’s own past is a nebulous fog of half‑truths and romantic invention, and Nick’s moral compass grows increasingly nebulous as he is drawn into the Buchanans’ orbit. The word suggests that in a world of surfaces, clear definition is impossible.",
+    "ex_en": "Gatsby’s nebulous business dealings were a dark cloud on the horizon of his otherwise polished dream.",
+    "ex_zh": "The mountain’s peak was lost in a nebulous shroud of mist, as if the earth had grown uncertain of its own summit.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "fluctuating",
+    "pron": "ˈflʌktʃuˌeɪtɪŋ",
+    "def_en": "rising and falling irregularly in number, amount, or intensity",
+    "def_zh": "fluctuating prices, fluctuating emotions, fluctuating temperature",
+    "quote_en": "\"with its fluctuating, feverish warmth\" – Nick Carraway describing the quality of Daisy’s voice that held Gatsby (Chapter 5)",
+    "quote_zh": "Daisy’s voice is described as possessing a ‘fluctuating, feverish warmth,’ a metaphor for her emotional instability and unreliability. The participle captures her mercurial nature—she leans toward Gatsby one moment and retreats the next. Fitzgerald uses this adjective to show that her love is not a steady flame but a flickering, unreliable heat. This image unsettles the romantic ideal Gatsby has cherished; Daisy is not a fixed star but a variable, subject to the gravitational pull of security and status.",
+    "ex_en": "Gatsby’s fluctuating fortune, built on illegal alcohol and paper promises, mirrored the precarious nature of his dream.",
+    "ex_zh": "The candle’s flame was a fluctuating dancer, bowing to every whisper of wind that passed through the cracked window.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "transpire",
+    "pron": "trænˈspaɪər",
+    "def_en": "to come to be known; to happen or occur",
+    "def_zh": "it transpired that, events transpire, later transpire",
+    "quote_en": "\"It transpired after a confused five minutes that the man had heard Gatsby’s name around his office\" – Nick Carraway describing the reporter who came to Gatsby’s door (Chapter 6)",
+    "quote_zh": "‘Transpired’ is a passive, almost clinical verb that distances Nick from the revelation; Gatsby’s notoriety emerges like a slow leak rather than a dramatic disclosure. The word’s botanical meaning—to give off vapor—suggests that his fame is an exhalation from the hundreds who accepted his hospitality. Fitzgerald uses ‘transpire’ to emphasize the inevitability of exposure; truth seeps out despite all attempts to contain it. This small word foreshadows the larger transpirings to come: the affair, the accident, the murder.",
+    "ex_en": "It would eventually transpire that Gatsby’s money came not from inherited rubies but from the corrupt arteries of the bootlegging underworld.",
+    "ex_zh": "The secret of the old well did not transpire until the drought, when its dark throat began to whisper the names of those who had drowned.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "meretricious",
+    "pron": "ˌmɛrɪˈtrɪʃəs",
+    "def_en": "apparently attractive but having in reality no value or integrity; falsely alluring",
+    "def_zh": "meretricious charm, meretricious beauty, meretricious decoration",
+    "quote_en": "\"the service of a vast, vulgar and meretricious beauty\" – Nick Carraway describing the ideal to which the young Jay Gatsby dedicated himself (Chapter 6)",
+    "quote_zh": "Fitzgerald’s choice of ‘meretricious’—from Latin meretrix, prostitute—is a devastating moral judgment, linking Gatsby’s dream to sexual and commercial corruption. The word exposes the ugly underside of his lavish aesthetic: the beauty is bought, fake, designed to seduce. Yet the novel complicates this condemnation by making that very meretricious beauty genuinely moving. Gatsby’s devotion to a ‘vast, vulgar, and meretricious beauty’ is the American Dream distilled—a consumerist fantasy that cheapens even as it inspires.",
+    "ex_en": "The meretricious splendor of West Egg could not disguise its essential impermanence, built as it was on bootleggers’ cash and broken hearts.",
+    "ex_zh": "The streetwalker’s meretricious smile glittered under the lamppost, a desperate imitation of love priced by the hour.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "ineffable",
+    "pron": "ɪnˈɛfəbəl",
+    "def_en": "too great or extreme to be expressed or described in words",
+    "def_zh": "ineffable joy, ineffable beauty, ineffable mystery",
+    "quote_en": "\"A universe of ineffable gaudiness spun itself out in his brain\" – Nick Carraway describing the adolescent Gatsby’s nightly fantasies (Chapter 6)",
+    "quote_zh": "‘Ineffable’ elevates Gatsby’s adolescent dreams to a quasi‑religious plane, suggesting a grandeur so immense it exceeds language. Yet the word is immediately undercut by ‘gaudiness,’ creating a jarring oxymoron that captures the contradiction at Gatsby’s core: his visions are simultaneously sublime and tacky, spiritual and materialistic. Fitzgerald uses this tension to critique an American Dream that conflates transcendence with cheap display. The ineffable quality of Gatsby’s imagination makes it forever unreachable, beyond articulation or attainment.",
+    "ex_en": "Daisy’s voice held an ineffable promise of love, a melody that Gatsby spent his whole life trying to replay.",
+    "ex_zh": "The old cathedral’s silence was ineffable, as if the stones had absorbed centuries of prayer and were still digesting their meaning.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "turgid",
+    "pron": "ˈtɜːrdʒɪd",
+    "def_en": "(of language) tediously pompous or bombastic; swollen or bloated",
+    "def_zh": "turgid prose, turgid writing, turgid explanation",
+    "quote_en": "\"the none too savory ramifications … were common knowledge to the turgid journalism of 1902\" – Nick Carraway on the press coverage of Dan Cody’s scandal (Chapter 6)",
+    "quote_zh": "Fitzgerald uses ‘turgid’ to mock the sensationalist newspapers of the Gilded Age, linking their bloated prose style to the moral rot they report. The word’s physical connotation—swollen, distended—suggests a language sick with excess, just as Dan Cody’s body and fortune are decayed by parasitical women and lawyers. This critique of turgid journalism parallels the novel’s own concern with narrative honesty; Nick’s prose is, by contrast, spare and elegiac, resisting the grandiosity that would falsify Gatsby’s tragedy.",
+    "ex_en": "Tom’s turgid pronouncements on the decline of civilization revealed not intellectual depth but the shallow bluster of inherited privilege.",
+    "ex_zh": "The river after the storm was turgid and brown, swollen with the secrets it had ripped from the mountainside.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "rancour",
+    "pron": "ˈræŋkər",
+    "def_en": "bitter, long‑lasting resentment; deep‑seated ill will",
+    "def_zh": "full of rancour, bear rancour, without rancour",
+    "quote_en": "\"‘Please don’t.’ Her voice was cold, but the rancour was gone from it.\" – Daisy speaking during the Plaza Hotel confrontation, after Gatsby demands she say she never loved Tom (Chapter 7)",
+    "quote_zh": "Fitzgerald uses ‘rancour’ to chart Daisy’s emotional state in real time. The noun signals a bitter hostility that momentarily vanishes, replaced by something more complicated—weariness, perhaps, or resignation. The absence of rancour does not mean love; it means exhaustion. This small linguistic shift is crucial, revealing that Daisy’s feelings are too tangled to be reduced to Gatsby’s simple script. The word underscores the novel’s insistence that human emotions are messy and resistant to the clean narratives Gatsby wants to impose.",
+    "ex_en": "Gatsby’s dream contained no rancour toward the world that rejected him, only a bewildered longing for the love he believed was his due.",
+    "ex_zh": "The old rivals met after decades, the rancour of their youth now softened to a warm, sad ember.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "ingratiate",
+    "pron": "ɪnˈɡreɪʃiˌeɪt",
+    "def_en": "to bring oneself into favor with someone by flattering or trying to please them",
+    "def_zh": "ingratiate oneself, ingratiate with, ingratiate into",
+    "quote_en": "\"trying to ingratiate myself with her senile aunt\" – Nick Carraway describing his efforts to win over Jordan Baker’s elderly relative (Chapter 6)",
+    "quote_zh": "Nick’s attempts to ‘ingratiate’ himself with Jordan’s aunt reveal the social performances required to move in East Egg circles. The verb carries a slightly unctuous quality, suggesting that Nick is compromising his Midwestern integrity in order to fit in. Fitzgerald uses it to underscore the transactional nature of relationships among the wealthy; affection is a strategic cultivation, not a spontaneous gift. This small detail foreshadows Gatsby’s far grander attempt to ingratiate himself with Daisy through his mansion and parties.",
+    "ex_en": "Gatsby’s lavish parties were a grand attempt to ingratiate himself with a world that would never truly accept him.",
+    "ex_zh": "The old cat, with calculated charm, began to ingratiate herself with the new tenant, weaving around his ankles like a silk scarf.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "profusion",
+    "pron": "prəˈfjuːʒən",
+    "def_en": "an abundance or large quantity of something; lavish outpouring",
+    "def_zh": "profusion of flowers, in profusion, profusion of color",
+    "quote_en": "\"the same profusion of champagne, the same many‑colored, many‑keyed commotion\" – Nick Carraway noting the repetitive excess of Gatsby’s parties (Chapter 6)",
+    "quote_zh": "‘Profusion’ describes the overflowing champagne that is both the substance and symbol of Gatsby’s desperate hospitality. Yet the word carries an undercurrent of waste; the wine is poured out for guests who neither know nor care about the host. Fitzgerald uses ‘profusion’ to indict the excess of the Jazz Age, a time when staggering abundance masked profound spiritual poverty. The profusion of material things contrasts painfully with the dearth of genuine human connection that defines Gatsby’s lonely life.",
+    "ex_en": "The profusion of flowers at Gatsby’s funeral could not disguise the profound absence of mourners.",
+    "ex_zh": "The meadow in spring was a profusion of wildflowers, each petal a reckless note in a symphony of color.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "euphemism",
+    "pron": "ˈjuːfəmɪzəm",
+    "def_en": "a mild or indirect word or expression substituted for one considered too harsh or blunt",
+    "def_zh": "use a euphemism, polite euphemism, mere euphemism",
+    "quote_en": "\"the raw vigor that chafed under the old euphemisms\" – Nick Carraway describing how West Egg’s brash energy unsettles the polite language of the established rich (Chapter 6)",
+    "quote_zh": "Fitzgerald notes that West Egg’s vitality ‘chafed under the old euphemisms,’ suggesting that the language of polite society cannot contain the new, unruly energy of the self‑made rich. Euphemisms are the verbal armour of the elite, a way of disguising uncomfortable truths. The novel itself systematically strips away such euphemisms: Myrtle’s death is not a ‘tragic accident’ but a hit‑and‑run, and Gatsby’s business is not ‘pharmaceuticals’ but bootlegging. Nick’s narration forces the reader to confront the ugly reality beneath the polished words.",
+    "ex_en": "Tom’s talk of ‘family institutions’ was a euphemism for his desire to keep Daisy as a possession.",
+    "ex_zh": "The graveyard was filled with marble euphemisms, each ‘fallen asleep’ a soft lie against the hard fact of the earth.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "disquieting",
+    "pron": "dɪsˈkwaɪətɪŋ",
+    "def_en": "causing anxiety or unease; disturbing",
+    "def_zh": "disquieting thought, disquieting silence, find something disquieting",
+    "quote_en": "\"That locality was always vaguely disquieting\" – Nick Carraway describing the valley of ashes (Chapter 7)",
+    "quote_zh": "‘Disquieting’ perfectly captures the low‑grade, persistent anxiety that permeates the valley of ashes, a landscape of moral and economic desolation. The adjective suggests a dread that cannot be pinpointed but is constantly felt. Fitzgerald uses it to foreshadow the violence that will erupt here—Myrtle’s death, Wilson’s grief, and ultimately Gatsby’s murder. The disquieting quality of the place is also spiritual: the eyes of Doctor T. J. Eckleburg watch over this unease without offering comfort, representing a God that sees but does not save.",
+    "ex_en": "There was something disquieting in Gatsby’s smile when he spoke of the past, as if he were willing a happy ending into existence.",
+    "ex_zh": "The old house exuded a disquieting charm, its shadows seeming to breathe in the corners.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "portentous",
+    "pron": "pɔːrˈtɛntəs",
+    "def_en": "of or like a portent; ominously significant; momentous",
+    "def_zh": "portentous sign, portentous event, portentous tone",
+    "quote_en": "\"we were listening to the portentous chords of Mendelssohn’s Wedding March from the ballroom below\" – Nick Carraway during the tense silence at the Plaza Hotel (Chapter 7)",
+    "quote_zh": "Fitzgerald uses ‘portentous’ to describe the wedding march, a piece of music that plays with cruel irony as Tom and Daisy’s marriage disintegrates in the room above. The adjective charges the moment with a sense of impending catastrophe. Later in the same chapter, Nick will call his thirtieth birthday a ‘portentous menacing road,’ linking personal dread to the novel’s larger atmosphere of doom. The word’s inflated grandeur mocks the characters’ self‑importance even as it acknowledges the genuine tragedy about to unfold.",
+    "ex_en": "The green light took on a portentous hue after Gatsby’s death, a beacon that had once signalled hope and now marked only absence.",
+    "ex_zh": "The sky that evening was a portentous bruise of purple and black, as if the horizon had been beaten by the coming storm.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "prig",
+    "pron": "prɪɡ",
+    "def_en": "a self‑righteously moralistic person who behaves as if superior to others",
+    "def_zh": "little prig, self‑righteous prig, moral prig",
+    "quote_en": "\"The transition from libertine to prig was so complete.\" – Nick Carraway observing Tom Buchanan suddenly adopting a moral posture (Chapter 7)",
+    "quote_zh": "Nick’s swift, contemptuous labeling of Tom as a ‘prig’ exposes the hypocrisy of old‑money morality. Tom, who openly flaunts his mistress and spouts racist pseudo‑science, instantly transforms into a defender of family values the moment his own possession—Daisy—is threatened. The word’s harsh brevity conveys Nick’s disgust; Tom’s priggishness is not a genuine moral conversion but a tactical weapon. Fitzgerald uses this single noun to crystallize the rotten core beneath the righteous facade of the established class.",
+    "ex_en": "Tom’s priggish insistence on moral standards was as hollow as the library full of unread books in Gatsby’s mansion.",
+    "ex_zh": "The village prig, with his carefully polished boots and his carefully polished condemnations, was the last to understand the miracle of the season’s first snowfall.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "vicariously",
+    "pron": "vɪˈkɛəriəsli",
+    "def_en": "in a way that is experienced in the imagination through the actions of another person",
+    "def_zh": "live vicariously, experience vicariously, vicariously enjoy",
+    "quote_en": "\"it would be a privilege to partake vicariously of their emotions\" – Nick Carraway wryly noting Tom and Gatsby’s insistence that he witness their confrontation (Chapter 7)",
+    "quote_zh": "The adverb ‘vicariously’ is a sharp piece of self‑awareness from Nick, acknowledging that he is positioned as a spectator to the central drama, feeling emotions at one remove. Fitzgerald uses it to critique the novel’s culture of spectatorship: Nick consumes Gatsby’s dream, the party guests consume Gatsby’s hospitality, and the rich consume one another’s lives, all without genuine engagement. The tragedy is that vicarious experience cannot substitute for moral action, as Nick discovers too late.",
+    "ex_en": "Nick lived vicariously through Gatsby’s grand ambition, only to find that borrowed dreams leave the deepest emptiness.",
+    "ex_zh": "The old theater’s empty seats still seemed to wait for vicarious laughter, the ghosts of a thousand audiences haunting the red velvet.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "magnanimous",
+    "pron": "mæɡˈnænɪməs",
+    "def_en": "very generous or forgiving, especially toward a rival or someone less powerful",
+    "def_zh": "magnanimous gesture, magnanimous spirit, magnanimous in victory",
+    "quote_en": "\"he insisted with magnanimous scorn\" – Nick Carraway describing Tom’s contemptuous ‘generosity’ in letting Gatsby and Daisy leave together (Chapter 7)",
+    "quote_zh": "Fitzgerald’s oxymoron ‘magnanimous scorn’ is a masterful encapsulation of Tom’s cruelty masquerading as nobility. The adjective ‘magnanimous’ should imply genuine generosity, but here it is poisoned by contempt. Tom is not being generous; he is performing dominance, completely confident that Daisy will not abandon him. The word exposes how the powerful use the language of virtue to disguise their violence and consolidate their victory.",
+    "ex_en": "Gatsby, in his final moments, never benefited from the magnanimous understanding of the world he had tried so hard to join.",
+    "ex_zh": "The winter sun, in a magnanimous gesture, poured the last of its gold upon the frozen field before surrendering to the night.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "presumptuous",
+    "pron": "prɪˈzʌmptʃuəs",
+    "def_en": "failing to observe the limits of what is permitted or appropriate; overstepping bounds",
+    "def_zh": "presumptuous of, rather presumptuous, presumptuous behavior",
+    "quote_en": "\"his presumptuous little flirtation is over\" – Tom Buchanan dismissing Gatsby’s five‑year devotion as a minor breach of etiquette (Chapter 7)",
+    "quote_zh": "Tom’s use of ‘presumptuous’ is a devastating class‑based insult that reduces Gatsby’s entire life—his love, his wealth, his dream—to a social gaffe. The word implies that Gatsby’s real sin is not loving Daisy but daring to presume equality with the Buchanans. Fitzgerald crystallizes the novel’s critique of inherited privilege in this single adjective: merit and feeling are irrelevant if you lack the right pedigree. Yet the novel also suggests that Gatsby’s entire existence is presumptuous, a magnificent overreach that the old order punishes with death.",
+    "ex_en": "Gatsby’s presumptuous belief that he could repeat the past was the tragic flaw that made him more than a simple fraud.",
+    "ex_zh": "The young poet’s presumptuous claim that he could capture the ocean in a sonnet earned him the moon’s silent, pitying smile.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "inquest",
+    "pron": "ˈɪnkwɛst",
+    "def_en": "a judicial inquiry to ascertain the facts relating to an incident, especially a death",
+    "def_zh": "hold an inquest, coroner’s inquest, public inquest",
+    "quote_en": "\"The young Greek, Michaelis, who ran the coffee joint beside the ashheaps was the principal witness at the inquest.\" – Nick Carraway introducing the legal investigation into Myrtle Wilson’s death (Chapter 7)",
+    "quote_zh": "The ‘inquest’ is a formal, clinical procedure that stands in stark contrast to the messy, unexamined moral responsibility of the Buchanans. Fitzgerald uses this official term to highlight the gap between legal process and moral truth. The inquest determines that Myrtle died by accident, but the novel itself acts as a deeper, more probing inquest into the spiritual causes of her death: Daisy’s recklessness, Tom’s infidelity, Gatsby’s obsession, and the collective carelessness of the rich.",
+    "ex_en": "Nick’s narrative becomes a private inquest into the events of that summer, sifting through the ashes for a truth no court could pronounce.",
+    "ex_zh": "The old sea captain’s inquest into the wreck concluded with a single word whispered to the waves: ‘forgotten.’",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "dejection",
+    "pron": "dɪˈdʒɛkʃən",
+    "def_en": "a sad and depressed state; low spirits",
+    "def_zh": "in dejection, deep dejection, feeling of dejection",
+    "quote_en": "\"heavy with dejection or sleep\" – Nick Carraway finding Gatsby slumped in his hall after the long vigil outside Daisy’s house (Chapter 8)",
+    "quote_zh": "‘Dejection’ captures Gatsby’s profound emotional exhaustion after the failed all‑night watch. The word’s clinical weight suggests a psychological collapse beyond ordinary sadness; it is the sinking of a dream that has buoyed him for five years. Fitzgerald uses it to mark the beginning of Gatsby’s final descent—from the euphoria of reunion through the confrontation at the Plaza to this heavy, silent desolation. The dejection that burdens his body prefigures his death, as if the vital force has already drained out of him.",
+    "ex_en": "Nick’s dejection after the funeral was compounded by the knowledge that he was the only one who truly mourned.",
+    "ex_zh": "The old willow’s drooping branches were a portrait of dejection, weeping into the silent pond.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "indiscernible",
+    "pron": "ˌɪndɪˈsɜːrnəbəl",
+    "def_en": "impossible to see or clearly distinguish",
+    "def_zh": "almost indiscernible, indiscernible difference, indiscernible boundary",
+    "quote_en": "\"indiscernible barbed wire between\" – Nick Carraway describing the invisible class barrier that separated the young Gatsby from Daisy’s world (Chapter 8)",
+    "quote_zh": "Fitzgerald’s metaphor ‘indiscernible barbed wire’ is a paradox of painful precision: the social barrier is invisible yet sharp enough to wound. The adjective suggests that the obstacles Gatsby faces are not material but psychological and social—unseen by the naked eye but utterly real. He could see Daisy’s house, touch her hand, but the indiscernible barbed wire of class kept him from ever truly entering her world. This invisible fence is what makes the novel’s tragedy so inexorable: it cannot be argued with or overcome by money alone.",
+    "ex_en": "The difference between West Egg and East Egg was to the casual eye almost indiscernible, but to Nick it was a chasm of manners and morality.",
+    "ex_zh": "The scent of rain on dry earth was an indiscernible promise until the first heavy drops began to fall.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "stratum",
+    "pron": "ˈstrɑːtəm",
+    "def_en": "a level or class to which people are assigned according to their social status, education, or income",
+    "def_zh": "social stratum, upper stratum, particular stratum",
+    "quote_en": "\"he let her believe that he was a person from much the same stratum as herself\" – Nick Carraway explaining Gatsby’s early deception of Daisy (Chapter 8)",
+    "quote_zh": "‘Stratum’ is a geological metaphor that reduces society to layers of ancient rock, fixed and immutable. Fitzgerald uses the word to expose the rigid class structure that Gatsby’s romantic imagination tries to ignore. Daisy belongs to a stratum that Gatsby, despite his millions, cannot truly penetrate, because it is inherited, not bought. The term implies that social mobility is largely an illusion—strata shift only over millennia. Gatsby’s tragedy is that he mistook the glittering surface for the whole substance.",
+    "ex_en": "Gatsby’s attempt to rise to Daisy’s stratum was like a fish trying to breathe the thin, cold air of the mountains.",
+    "ex_zh": "The old library’s books were arranged in strata of neglect, each layer of dust a century of forgotten readers.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "redolent",
+    "pron": "ˈrɛdələnt",
+    "def_en": "strongly reminiscent or suggestive of something; fragrant with",
+    "def_zh": "redolent of, be redolent with, redolent aroma",
+    "quote_en": "\"fresh and breathing and redolent of this year’s shining motor cars\" – Nick Carraway describing the intoxicating atmosphere of Daisy’s world as perceived by the young Gatsby (Chapter 8)",
+    "quote_zh": "Fitzgerald uses ‘redolent’ to evoke the sensory allure of Daisy’s privileged existence, a world that literally smells of new cars and fresh flowers. The word’s etymological root in ‘odor’ links wealth to a kind of perfume—intoxicating but ultimately superficial. Gatsby is drawn to this scent like a moth to a flame, but it is the smell of commodified desire rather than genuine intimacy. The redolence of Daisy’s life masks the rot beneath, a floral spray over hidden decay.",
+    "ex_en": "The atmosphere at Gatsby’s parties was redolent of gin and jasmine, a sweet, heady mix that promised everything and delivered nothing.",
+    "ex_zh": "The old kitchen was redolent of cinnamon and memory, each spice a ghost of a grandmother’s embrace.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "amorphous",
+    "pron": "əˈmɔːrfəs",
+    "def_en": "without a clearly defined shape or form; shapeless",
+    "def_zh": "amorphous mass, amorphous blob, amorphous shape",
+    "quote_en": "\"like that ashen, fantastic figure gliding toward him through the amorphous trees\" – Nick Carraway imagining Wilson’s approach to Gatsby’s pool (Chapter 8)",
+    "quote_zh": "The ‘amorphous trees’ through which Wilson moves represent the formless, creeping threat that has been gathering throughout the novel. The adjective suggests a world losing its solidity, where identities blur and danger cannot be precisely identified. For Gatsby, the approaching figure is a phantom of retribution born from the valley of ashes, an amorphous embodiment of the moral chaos he tried to transcend. Fitzgerald uses this word to create a dreamlike, horrifying texture just before the fatal gunshot.",
+    "ex_en": "Gatsby’s dream, once so sharply defined, became amorphous in the face of reality, dissolving like morning mist over the bay.",
+    "ex_zh": "The fog rolled in, making the lighthouse an amorphous beacon, more a feeling than a place.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "adventitious",
+    "pron": "ˌædvɛnˈtɪʃəs",
+    "def_en": "happening or carried on according to chance rather than design; accidental",
+    "def_zh": "adventitious circumstance, adventitious advantage, adventitious cause",
+    "quote_en": "\"the adventitious authority of his voice set the key for the newspaper reports next morning\" – Nick Carraway describing how a random detective’s remarks shaped the public story of Gatsby’s death (Chapter 9)",
+    "quote_zh": "‘Adventitious’ is a recondite, almost philosophical word that captures the novel’s theme of randomness. The detective’s authority is not earned but accidental; his offhand remarks harden into the official version of events. Fitzgerald uses this adjective to emphasize that lives are destroyed not by fate but by chance occurrences and careless words—a yellow car, a mistaken belief, a door left open. Gatsby’s death is adventitious in the deepest sense: a random collision of misunderstandings that no one intended.",
+    "ex_en": "The adventitious meeting between Gatsby and Cody’s yacht determined the entire arc of his life, a stroke of luck that was also a curse.",
+    "ex_zh": "The adventitious arrival of a single letter turned the quiet house into a stage for all the dramas its walls had ever contained.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "circumstantial",
+    "pron": "ˌsɜːrkəmˈstænʃəl",
+    "def_en": "pointing indirectly toward a conclusion but not conclusively proving it; detailed",
+    "def_zh": "circumstantial evidence, circumstantial detail, purely circumstantial",
+    "quote_en": "\"Most of those reports were a nightmare—grotesque, circumstantial, eager and untrue.\" – Nick Carraway on the newspaper accounts of Gatsby’s death (Chapter 9)",
+    "quote_zh": "Nick calls the reports ‘circumstantial,’ meaning they are packed with vivid but ultimately misleading details. The word highlights how narratives can be constructed from fragments that seem persuasive yet miss the essential heart of the truth. The newspapers and the coroner’s inquest produce a circumstantial account of Gatsby’s end, but Nick’s own novelistic story offers the emotional and moral reality they lack. Fitzgerald suggests that all stories are, to some degree, circumstantial—cobbled together from limited perspectives.",
+    "ex_en": "The evidence of Gatsby’s criminality was largely circumstantial, a web of rumors that obscured the desperate romantic at the center.",
+    "ex_zh": "The detective examined the circumstantial arrangement of the dusty room: a fallen candlestick, a torn letter, a silence that said more than screams.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "surmise",
+    "pron": "sərˈmaɪz",
+    "def_en": "a supposition that something may be true, even though there is no evidence to confirm it",
+    "def_zh": "pure surmise, based on surmise, mere surmise",
+    "quote_en": "\"every surmise about him, and every practical question, was referred to me\" – Nick Carraway on becoming the reluctant custodian of Gatsby’s posthumous affairs (Chapter 9)",
+    "quote_zh": "After Gatsby’s death, all ‘surmise’ falls to Nick, making him the keeper of a dead man’s memory. The word implies guesswork and uncertainty, reflecting the fact that Gatsby remains an enigma even to his closest acquaintance. Fitzgerald uses ‘surmise’ to underscore the novel’s epistemological limits: we can never fully know another person, least of all one who was his own invention. Nick’s entire narrative is an act of loving surmise, a best guess at the inner life of a ghost.",
+    "ex_en": "The green light was a beacon for Gatsby’s surmise, a hope built on nothing more substantial than the flicker of a distant bulb.",
+    "ex_zh": "The old astronomer’s journal was filled with surmise about the new star, each entry a love letter to an unreachable light.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "solidarity",
+    "pron": "ˌsɒlɪˈdærəti",
+    "def_en": "unity or agreement of feeling or action, especially among individuals with a common interest",
+    "def_zh": "show solidarity, in solidarity with, sense of solidarity",
+    "quote_en": "\"a feeling of defiance, of scornful solidarity between Gatsby and me against them all\" – Nick Carraway describing his growing identification with Gatsby after the death (Chapter 9)",
+    "quote_zh": "Nick’s ‘scornful solidarity’ is a belated allegiance, forged only after Gatsby is dead and the world has abandoned him. The word carries political and moral weight, suggesting a principled stand against the Buchanans’ carelessness. This solidarity is both a rebuke and an elegy; it comes too late to save Gatsby but it salvages Nick’s own moral vision. Fitzgerald uses the term to elevate Nick’s loyalty above mere sympathy, casting it as a defiant, ethical commitment.",
+    "ex_en": "The solidarity that emerged among Gatsby’s few mourners was a frail but defiant counterpoint to the vast silence of his former guests.",
+    "ex_zh": "The old oaks in the forest shared an unspoken solidarity, their roots intertwined in a dark, enduring embrace.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "defer",
+    "pron": "dɪˈfɜːr",
+    "def_en": "to put off an action or event to a later time; postpone",
+    "def_zh": "defer to, defer action, defer judgment",
+    "quote_en": "\"all arrangements had been deferred until he came\" – Nick Carraway telling Gatsby’s father that the funeral plans were postponed (Chapter 9)",
+    "quote_zh": "The funeral arrangements are ‘deferred’ for the arrival of Henry Gatz, a small gesture of respect that contrasts with the rush with which the rest of the world moves on. The verb echoes Langston Hughes’s ‘a dream deferred,’ hinting at the larger postponement that defined Gatsby’s life. Gatsby spent years deferring happiness to a future that never arrived; now even his burial is deferred. Fitzgerald uses the word to evoke the cumulative weight of waiting that crushes the American Dream.",
+    "ex_en": "Gatsby had deferred his own authenticity so long that when the moment came to be real, there was nothing left but a gesture.",
+    "ex_zh": "The old judge deferred his verdict, letting the silence in the courtroom grow until it became a character in the trial.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "reverent",
+    "pron": "ˈrɛvərənt",
+    "def_en": "feeling or showing deep and solemn respect",
+    "def_zh": "reverent tone, reverent attitude, reverent silence",
+    "quote_en": "\"in a reverent voice that it was a sad time for all of us\" – Nick Carraway describing Meyer Wolfshiem’s pious manner when speaking of Gatsby’s death (Chapter 9)",
+    "quote_zh": "Wolfshiem’s ‘reverent voice’ is deeply ironic, given his adamant refusal to attend Gatsby’s funeral. The adjective exposes the chasm between performance and sincerity; Wolfshiem speaks of sadness with the tones of a mourner, but his actions betray no genuine grief. Fitzgerald uses this false reverence to indict the criminal and business associates who exploited Gatsby and then fled his corpse. The word contrasts painfully with Nick’s own quiet, untheatrical devotion to Gatsby’s memory.",
+    "ex_en": "Nick’s reverent description of Gatsby’s smile suggests that, even in failure, there was something sacred about the man’s capacity for hope.",
+    "ex_zh": "The museum visitors spoke in reverent whispers, as if the paintings could hear and might be offended by the truth.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "elocution",
+    "pron": "ˌɛləˈkjuːʃən",
+    "def_en": "the skill of clear and expressive speech, especially of distinct pronunciation and articulation",
+    "def_zh": "elocution lessons, study elocution, practice elocution",
+    "quote_en": "\"Practice elocution, poise and how to attain it\" – From the schedule written in the back of young Jimmy Gatz’s copy of ‘Hopalong Cassidy’ (Chapter 9)",
+    "quote_zh": "The boy Gatsby’s program of ‘elocution’ is a poignant blueprint of self‑improvement, the discipline by which James Gatz tried to erase his humble voice. The word is doubly ironic because the adult Gatsby’s speech is a patchwork of adopted phrases (‘old sport’) that never quite ring true. Elocution—the art of sounding like someone else—is Gatsby’s great project, yet it also marks his fundamental inauthenticity. Fitzgerald uses this small detail to humanize Gatsby, revealing the earnest, lonely child behind the glittering criminal facade.",
+    "ex_en": "Gatsby’s elocution was a carefully studied performance, each syllable a brick in the wall between his true self and the world.",
+    "ex_zh": "The old actor’s elocution still held the power to hush a room, each word a velvet hammer striking the silence.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "transitory",
+    "pron": "ˈtrænsɪˌtɔːri",
+    "def_en": "not permanent; temporary",
+    "def_zh": "transitory nature, transitory moment, transitory phenomenon",
+    "quote_en": "\"for a transitory enchanted moment man must have held his breath\" – Nick Carraway imagining the first Dutch sailors’ awe at the sight of the New World (Chapter 9)",
+    "quote_zh": "In the novel’s final, visionary passage, ‘transitory’ describes the fleeting instant of pure wonder experienced by the first Europeans. The adjective captures the ephemeral quality of all human aspiration: the green light, Gatsby’s dream, the summer itself are transitory. Fitzgerald uses it to cast an elegiac glow over the entire narrative, insisting that beauty and meaning are inseparable from their impermanence. The transitory nature of Gatsby’s triumph makes his effort both futile and sublime.",
+    "ex_en": "Gatsby’s triumph over class was transitory, a brief candle flame that the wind of East Egg snuffed out without a thought.",
+    "ex_zh": "The cherry blossoms were a transitory snow, a pink whisper that the spring wind delivered and the spring wind erased.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "aesthetic",
+    "pron": "ɛsˈθɛtɪk",
+    "def_en": "concerned with beauty or the appreciation of beauty",
+    "def_zh": "aesthetic appeal, aesthetic value, purely aesthetic",
+    "quote_en": "\"compelled into an aesthetic contemplation he neither understood nor desired\" – Nick Carraway describing the involuntary wonder of the Dutch sailors (Chapter 9)",
+    "quote_zh": "Fitzgerald uses ‘aesthetic’ to name a moment of pure, disinterested beauty—a contemplation that is pre‑philosophical, almost involuntary. The word suggests that the American continent was once an object of awe untainted by commerce or greed. This moment of aesthetic arrest becomes the novel’s moral benchmark, the standard by which Gatsby’s corrupted, commodified dream is measured. Gatsby confused aesthetic enchantment (Daisy’s voice, the green light) with something attainable and lasting, and in doing so turned art into a transaction.",
+    "ex_en": "Gatsby’s mansion was an aesthetic triumph that would have moved a connoisseur, but it was built for an audience of one who preferred simpler charms.",
+    "ex_zh": "The old painter’s final canvas was an aesthetic cry against the darkness, a riot of color that refused to fade.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "commensurate",
+    "pron": "kəˈmɛnsərɪt",
+    "def_en": "corresponding in size or degree; in proportion",
+    "def_zh": "commensurate with, commensurate reward, commensurate response",
+    "quote_en": "\"something commensurate to his capacity for wonder\" – Nick Carraway’s description of what the New World once offered the first explorers (Chapter 9)",
+    "quote_zh": "The novel’s penultimate word, ‘commensurate,’ is a term of precise measurement that clashes powerfully with the ineffable wonder it describes. Fitzgerald uses this tension to suggest that the American continent once offered an experience equal to human longing—a perfect fit between desire and object. That commensurability is now lost; Gatsby’s colossal dream is too large for Daisy, and the green light recedes forever. The word ends the novel on a note of profound, mathematically exact loss.",
+    "ex_en": "Gatsby sought a love commensurate with his colossal imagination, but Daisy was only a mortal woman.",
+    "ex_zh": "The depth of the old well was commensurate with the sky it reflected, a perfect circle of dark matching a perfect circle of light.",
+    "part_of_speech": "adjective"
+  }
+];
+
+// ============================================================
+// SYNONYMS/ANTONYMS DATA
+// ============================================================
+const SYNAN = JSON.parse(decodeURIComponent(escape(atob("eyJyZXNlcnZlZCI6eyJzeW4iOlsicmVzdHJhaW5lZCIsInJldGljZW50Iiwic2lsZW50IiwidGFjaXR1cm4iLCJpbnRyb3ZlcnRlZCJdLCJhbnQiOlsidGFsa2F0aXZlIiwib3V0Z29pbmciLCJleHByZXNzaXZlIiwibG9xdWFjaW91cyJdfSwicHJpdnkiOnsic3luIjpbImNvbmZpZGVudGlhbCIsInNlY3JldCIsImluc2lkZSIsImluZm9ybWVkIiwia25vd2xlZGdlYWJsZSJdLCJhbnQiOlsiaWdub3JhbnQiLCJ1bmluZm9ybWVkIiwidW5hd2FyZSIsImV4Y2x1ZGVkIl19LCJlcGlncmFtIjp7InN5biI6WyJhcGhvcmlzbSIsIm1heGltIiwiYWRhZ2UiLCJ3aXR0aWNpc20iLCJwcm92ZXJiIl0sImFudCI6WyJwbGF0aXR1ZGUiLCJjbGljaMOpIiwiYmFuYWxpdHkiLCJ0cnVpc20iXX0sInByb3hpbWl0eSI6eyJzeW4iOlsiY2xvc2VuZXNzIiwidmljaW5pdHkiLCJwcm9waW5xdWl0eSIsImFkamFjZW5jeSIsImNvbnRpZ3VpdHkiXSwiYW50IjpbImRpc3RhbmNlIiwicmVtb3RlbmVzcyIsImlzb2xhdGlvbiIsInNlcGFyYXRpb24iXX0sInR1cmJ1bGVuY2UiOnsic3luIjpbInR1cm1vaWwiLCJ1cGhlYXZhbCIsInVucmVzdCIsImNoYW9zIiwiYWdpdGF0aW9uIl0sImFudCI6WyJjYWxtIiwicGVhY2UiLCJ0cmFucXVpbGl0eSIsInNlcmVuaXR5Il19LCJzdXBlcmNpbGlvdXMiOnsic3luIjpbImFycm9nYW50IiwiaGF1Z2h0eSIsImRpc2RhaW5mdWwiLCJjb25kZXNjZW5kaW5nIiwic25vYmJpc2giXSwiYW50IjpbImh1bWJsZSIsIm1vZGVzdCIsInVuYXNzdW1pbmciLCJyZXNwZWN0ZnVsIl19LCJjb25zY2llbnRpb3VzIjp7InN5biI6WyJkaWxpZ2VudCIsInRob3JvdWdoIiwibWV0aWN1bG91cyIsInNjcnVwdWxvdXMiLCJjYXJlZnVsIl0sImFudCI6WyJjYXJlbGVzcyIsIm5lZ2xpZ2VudCIsInNsYXBkYXNoIiwiaXJyZXNwb25zaWJsZSJdfSwiaW1wZXJjZXB0aWJseSI6eyJzeW4iOlsidW5ub3RpY2VhYmx5Iiwic3VidGx5IiwiaW52aXNpYmx5IiwiZ3JhZHVhbGx5IiwiZmFpbnRseSJdLCJhbnQiOlsibm90aWNlYWJseSIsIm9idmlvdXNseSIsImNsZWFybHkiLCJjb25zcGljdW91c2x5Il19LCJsYW5ndWlkbHkiOnsic3luIjpbImxpc3RsZXNzbHkiLCJsZXRoYXJnaWNhbGx5IiwiaW5kb2xlbnRseSIsInNsdWdnaXNobHkiLCJkcmVhbWlseSJdLCJhbnQiOlsiZW5lcmdldGljYWxseSIsInZpZ29yb3VzbHkiLCJicmlza2x5IiwiYW5pbWF0ZWRseSJdfSwiY29tcGxhY2VuY3kiOnsic3luIjpbInNtdWduZXNzIiwic2VsZuKAkXNhdGlzZmFjdGlvbiIsImNvbnRlbnRtZW50Iiwic2VsZuKAkWFwcHJvdmFsIiwiZ2xpYm5lc3MiXSwiYW50IjpbImRpc2NvbnRlbnQiLCJhbnhpZXR5IiwiaHVtaWxpdHkiLCJkaXNzYXRpc2ZhY3Rpb24iXX0sImV4dGVtcG9yaXplIjp7InN5biI6WyJpbXByb3Zpc2UiLCJhZOKAkWxpYiIsIndpbmcgaXQiLCJpbnZlbnQiLCJjb25jb2N0Il0sImFudCI6WyJwbGFuIiwicHJlcGFyZSIsInJlaGVhcnNlIiwic2NyaXB0Il19LCJzZWRhdGl2ZSI6eyJzeW4iOlsic29vdGhpbmciLCJjYWxtaW5nIiwidHJhbnF1aWxpemluZyIsInJlbGF4aW5nIiwiYW5vZHluZSJdLCJhbnQiOlsic3RpbXVsYXRpbmciLCJleGNpdGluZyIsImFnaXRhdGluZyIsInByb3Zva2luZyJdfSwiY3luaWNhbCI6eyJzeW4iOlsic2tlcHRpY2FsIiwiZGlzdHJ1c3RmdWwiLCJwZXNzaW1pc3RpYyIsInNhcmRvbmljIiwiZGlzYmVsaWV2aW5nIl0sImFudCI6WyJ0cnVzdGZ1bCIsIm9wdGltaXN0aWMiLCJpZGVhbGlzdGljIiwiZ3VsbGlibGUiXX0sInNvcGhpc3RpY2F0ZWQiOnsic3luIjpbIndvcmxkbHkiLCJyZWZpbmVkIiwiY29zbW9wb2xpdGFuIiwiY3VsdHVyZWQiLCJzdWF2ZSJdLCJhbnQiOlsibmFpdmUiLCJ1bnNvcGhpc3RpY2F0ZWQiLCJwcm92aW5jaWFsIiwic2ltcGxlIl19LCJpbnRpbWF0aW9uIjp7InN5biI6WyJoaW50Iiwic3VnZ2VzdGlvbiIsImlua2xpbmciLCJpbXBsaWNhdGlvbiIsImFsbHVzaW9uIl0sImFudCI6WyJkZWNsYXJhdGlvbiIsInN0YXRlbWVudCIsImFzc2VydGlvbiIsImV4cGxpY2l0IGNsYWltIl19LCJvY3VsaXN0Ijp7InN5biI6WyJleWUgZG9jdG9yIiwib3BodGhhbG1vbG9naXN0Iiwib3B0b21ldHJpc3QiLCJleWUgc3BlY2lhbGlzdCJdLCJhbnQiOltdfSwicHJvcHJpZXRhcnkiOnsic3luIjpbInBvc3Nlc3NpdmUiLCJ0ZXJyaXRvcmlhbCIsInByb3RlY3RpdmUiLCJvd25pbmciLCJqZWFsb3VzIl0sImFudCI6WyJzaGFyaW5nIiwib3BlbiIsImNvbW11bmFsIiwidW5wb3NzZXNzaXZlIl19LCJoYXV0ZXVyIjp7InN5biI6WyJoYXVnaHRpbmVzcyIsImFycm9nYW5jZSIsInN1cGVyY2lsaW91c25lc3MiLCJkaXNkYWluIiwicHJpZGUiXSwiYW50IjpbImh1bWlsaXR5IiwibW9kZXN0eSIsIm1lZWtuZXNzIiwiYXBwcm9hY2hhYmlsaXR5Il19LCJtaW5jaW5nIjp7InN5biI6WyJkYWludHkiLCJhZmZlY3RlZCIsInByZWNpb3VzIiwicHJpc3N5IiwiZnVzc3kiXSwiYW50IjpbIm5hdHVyYWwiLCJ1bmFmZmVjdGVkIiwic3RyYWlnaHRmb3J3YXJkIiwiYmx1bnQiXX0sInByb2RpZ2FsaXR5Ijp7InN5biI6WyJleHRyYXZhZ2FuY2UiLCJsYXZpc2huZXNzIiwid2FzdGVmdWxuZXNzIiwicHJvZmxpZ2FjeSIsImV4Y2VzcyJdLCJhbnQiOlsiZnJ1Z2FsaXR5IiwidGhyaWZ0IiwiZWNvbm9teSIsInJlc3RyYWludCJdfSwidmVoZW1lbnRseSI6eyJzeW4iOlsicGFzc2lvbmF0ZWx5IiwiaW50ZW5zZWx5IiwiZmllcmNlbHkiLCJmb3JjZWZ1bGx5IiwiZW1waGF0aWNhbGx5Il0sImFudCI6WyJtaWxkbHkiLCJjYWxtbHkiLCJpbmRpZmZlcmVudGx5IiwidGVwaWRseSJdfSwic3RhaWQiOnsic3luIjpbInNlZGF0ZSIsInJlc3BlY3RhYmxlIiwic29iZXIiLCJzdGVhZHkiLCJ1bmFkdmVudHVyb3VzIl0sImFudCI6WyJ3aWxkIiwibGl2ZWx5IiwiYWR2ZW50dXJvdXMiLCJmbGFtYm95YW50Il19LCJpbXBldHVvdXNseSI6eyJzeW4iOlsiaW1wdWxzaXZlbHkiLCJyYXNobHkiLCJoZWFkbG9uZyIsInJlY2tsZXNzbHkiLCJoYXN0aWx5Il0sImFudCI6WyJjYXV0aW91c2x5IiwiZGVsaWJlcmF0ZWx5IiwicHJ1ZGVudGx5IiwidGhvdWdodGZ1bGx5Il19LCJ2YWN1b3VzIjp7InN5biI6WyJlbXB0eSIsImJsYW5rIiwibWluZGxlc3MiLCJpbmFuZSIsImZhdHVvdXMiXSwiYW50IjpbIm1lYW5pbmdmdWwiLCJpbnRlbGxpZ2VudCIsIndpc2UiLCJpbnNpZ2h0ZnVsIl19LCJwcm92aW5jaWFsIjp7InN5biI6WyJ1bnNvcGhpc3RpY2F0ZWQiLCJwYXJvY2hpYWwiLCJuYXJyb3figJFtaW5kZWQiLCJpbnN1bGFyIiwiY291bnRyaWZpZWQiXSwiYW50IjpbImNvc21vcG9saXRhbiIsIndvcmxkbHkiLCJzb3BoaXN0aWNhdGVkIiwiYnJvYWTigJFtaW5kZWQiXX0sImNvbnZpdmlhbCI6eyJzeW4iOlsiZmVzdGl2ZSIsInNvY2lhYmxlIiwiam92aWFsIiwiZnJpZW5kbHkiLCJtZXJyeSJdLCJhbnQiOlsidW5zb2NpYWJsZSIsImRvdXIiLCJnbG9vbXkiLCJzb2xlbW4iXX0sImRpc3NlbnNpb24iOnsic3luIjpbImRpc2FncmVlbWVudCIsImRpc2NvcmQiLCJzdHJpZmUiLCJjb25mbGljdCIsImRpdmlzaW9uIl0sImFudCI6WyJoYXJtb255IiwiYWdyZWVtZW50IiwiY29uY29yZCIsInVuaXR5Il19LCJ0dW11bHR1b3VzIjp7InN5biI6WyJjaGFvdGljIiwiZGlzb3JkZXJseSIsIm5vaXN5IiwidXByb2FyaW91cyIsInN0b3JteSJdLCJhbnQiOlsib3JkZXJseSIsInBlYWNlZnVsIiwiY2FsbSIsInF1aWV0Il19LCJhZmZlY3RhdGlvbiI6eyJzeW4iOlsicHJldGVuc2UiLCJhcnRpZmljaWFsaXR5IiwicG9zZSIsIm1hbm5lcmlzbSIsImluc2luY2VyaXR5Il0sImFudCI6WyJzaW5jZXJpdHkiLCJuYXR1cmFsbmVzcyIsImdlbnVpbmVuZXNzIiwiYXV0aGVudGljaXR5Il19LCJzdWJ0ZXJmdWdlIjp7InN5biI6WyJkZWNlaXQiLCJ0cmlja2VyeSIsInN0cmF0YWdlbSIsInJ1c2UiLCJldmFzaW9uIl0sImFudCI6WyJob25lc3R5IiwiZnJhbmtuZXNzIiwib3Blbm5lc3MiLCJzdHJhaWdodGZvcndhcmRuZXNzIl19LCJzcG9yYWRpYyI6eyJzeW4iOlsib2NjYXNpb25hbCIsImludGVybWl0dGVudCIsImlycmVndWxhciIsInNjYXR0ZXJlZCIsImZpdGZ1bCJdLCJhbnQiOlsiY29udGludW91cyIsImNvbnN0YW50Iiwic3RlYWR5IiwiZnJlcXVlbnQiXX0sInB1bmN0aWxpb3VzIjp7InN5biI6WyJtZXRpY3Vsb3VzIiwic2NydXB1bG91cyIsInByZWNpc2UiLCJjYXJlZnVsIiwiY2VyZW1vbmlvdXMiXSwiYW50IjpbImNhcmVsZXNzIiwic2xhcGRhc2giLCJpbmZvcm1hbCIsIm5lZ2xpZ2VudCJdfSwiZGlzY29uY2VydGluZyI6eyJzeW4iOlsidW5zZXR0bGluZyIsInBlcnR1cmJpbmciLCJkaXN0dXJiaW5nIiwidW5uZXJ2aW5nIiwiY29uZnVzaW5nIl0sImFudCI6WyJjb21mb3J0aW5nIiwicmVhc3N1cmluZyIsInNvb3RoaW5nIiwic2V0dGxpbmciXX0sImV2YXNpb24iOnsic3luIjpbImF2b2lkYW5jZSIsImRvZGdpbmciLCJlc2NhcGUiLCJwcmV2YXJpY2F0aW9uIiwiZXF1aXZvY2F0aW9uIl0sImFudCI6WyJjb25mcm9udGF0aW9uIiwiZGlyZWN0bmVzcyIsImZyYW5rbmVzcyIsImhvbmVzdHkiXX0sInJldHJpYnV0aW9uIjp7InN5biI6WyJ2ZW5nZWFuY2UiLCJwYXliYWNrIiwicmVxdWl0YWwiLCJwdW5pc2htZW50IiwicmVjb21wZW5zZSJdLCJhbnQiOlsibWVyY3kiLCJmb3JnaXZlbmVzcyIsInBhcmRvbiIsImFtbmVzdHkiXX0sInRocmVhZGJhcmUiOnsic3luIjpbIndvcm4iLCJzaGFiYnkiLCJ0YXR0ZXJlZCIsImZyYXllZCIsIm92ZXJ1c2VkIl0sImFudCI6WyJuZXciLCJmcmVzaCIsIm9yaWdpbmFsIiwicHJpc3RpbmUiXX0sImVuZ3Jvc3NlZCI6eyJzeW4iOlsiYWJzb3JiZWQiLCJlbmdhZ2VkIiwiaW1tZXJzZWQiLCJwcmVvY2N1cGllZCIsImVudGhyYWxsZWQiXSwiYW50IjpbImluZGlmZmVyZW50IiwiZGlzdHJhY3RlZCIsInVuaW50ZXJlc3RlZCIsImJvcmVkIl19LCJwb21wIjp7InN5biI6WyJjZXJlbW9ueSIsInNwbGVuZG9yIiwicGFub3BseSIsImdyYW5kZXVyIiwib3N0ZW50YXRpb24iXSwiYW50IjpbInNpbXBsaWNpdHkiLCJtb2Rlc3R5IiwiYXVzdGVyaXR5IiwicGxhaW5uZXNzIl19LCJoZWFkeSI6eyJzeW4iOlsiaW50b3hpY2F0aW5nIiwiZXhoaWxhcmF0aW5nIiwidGhyaWxsaW5nIiwicG90ZW50IiwiZXhjaXRpbmciXSwiYW50IjpbImR1bGwiLCJzb2JlcmluZyIsImJsYW5kIiwiaW5zaXBpZCJdfSwiZmFjYWRlIjp7InN5biI6WyJtYXNrIiwicHJldGVuc2UiLCJ2ZW5lZXIiLCJmcm9udCIsImRpc2d1aXNlIl0sImFudCI6WyJyZWFsaXR5IiwidHJ1dGgiLCJjb3JlIiwic3Vic3RhbmNlIl19LCJkaXN0cmF1Z2h0Ijp7InN5biI6WyJhZ2l0YXRlZCIsImZyYW50aWMiLCJoeXN0ZXJpY2FsIiwib3Zlcndyb3VnaHQiLCJ0cm91YmxlZCJdLCJhbnQiOlsiY29tcG9zZWQiLCJjYWxtIiwic2VyZW5lIiwidW5ydWZmbGVkIl19LCJ2ZXN0aWdlIjp7InN5biI6WyJ0cmFjZSIsInJlbW5hbnQiLCJyZXNpZHVlIiwicmVsaWMiLCJoaW50Il0sImFudCI6WyJhYnVuZGFuY2UiLCJmbG9vZCIsImJ1bGsiLCJjb21wbGV0ZSBhYnNlbmNlIl19LCJleHVsdGF0aW9uIjp7InN5biI6WyJlbGF0aW9uIiwianViaWxhdGlvbiIsInRyaXVtcGgiLCJyZWpvaWNpbmciLCJlY3N0YXN5Il0sImFudCI6WyJnbG9vbSIsImRlc3BhaXIiLCJzb3Jyb3ciLCJkZWplY3Rpb24iXX0sIm5lYnVsb3VzIjp7InN5biI6WyJ2YWd1ZSIsImhhenkiLCJpbmRpc3RpbmN0IiwiZnV6enkiLCJjbG91ZHkiXSwiYW50IjpbImNsZWFyIiwiZGlzdGluY3QiLCJwcmVjaXNlIiwic2hhcnAiXX0sImZsdWN0dWF0aW5nIjp7InN5biI6WyJ2YXJ5aW5nIiwib3NjaWxsYXRpbmciLCJ3YXZlcmluZyIsInNoaWZ0aW5nIiwidW5zdGFibGUiXSwiYW50IjpbInN0ZWFkeSIsImNvbnN0YW50Iiwic3RhYmxlIiwidW5jaGFuZ2luZyJdfSwidHJhbnNwaXJlIjp7InN5biI6WyJjb21lIHRvIGxpZ2h0IiwiZW1lcmdlIiwidW5mb2xkIiwib2NjdXIiLCJoYXBwZW4iXSwiYW50IjpbInJlbWFpbiBoaWRkZW4iLCJiZSBzdXBwcmVzc2VkIiwic3RheSBzZWNyZXQiXX0sIm1lcmV0cmljaW91cyI6eyJzeW4iOlsidGF3ZHJ5Iiwic3BlY2lvdXMiLCJmYWxzZSIsImdhdWR5Iiwic3VwZXJmaWNpYWwiXSwiYW50IjpbImF1dGhlbnRpYyIsImdlbnVpbmUiLCJob25lc3QiLCJzdWJzdGFudGlhbCJdfSwiaW5lZmZhYmxlIjp7InN5biI6WyJpbmRlc2NyaWJhYmxlIiwidW51dHRlcmFibGUiLCJ1bnNwZWFrYWJsZSIsInRyYW5zY2VuZGVudCIsImluZXhwcmVzc2libGUiXSwiYW50IjpbImV4cHJlc3NpYmxlIiwiZGVmaW5hYmxlIiwiZGVzY3JpYmFibGUiLCJhcnRpY3VsYWJsZSJdfSwidHVyZ2lkIjp7InN5biI6WyJib21iYXN0aWMiLCJwb21wb3VzIiwiYmxvYXRlZCIsImdyYW5kaWxvcXVlbnQiLCJvdmVy4oCRaW5mbGF0ZWQiXSwiYW50IjpbImNvbmNpc2UiLCJwbGFpbiIsInNpbXBsZSIsInJlc3RyYWluZWQiXX0sInJhbmNvdXIiOnsic3luIjpbInJlc2VudG1lbnQiLCJiaXR0ZXJuZXNzIiwiZ3J1ZGdlIiwibWFsaWNlIiwic3BpdGUiXSwiYW50IjpbImZvcmdpdmVuZXNzIiwiYmVuZXZvbGVuY2UiLCJnb29kd2lsbCIsImxvdmUiXX0sImluZ3JhdGlhdGUiOnsic3luIjpbImZsYXR0ZXIiLCJ3aGVlZGxlIiwiY3VycnkgZmF2b3VyIiwiaW5zaW51YXRlIiwidG9hZHkiXSwiYW50IjpbImFsaWVuYXRlIiwiZXN0cmFuZ2UiLCJyZXBlbCIsIm9mZmVuZCJdfSwicHJvZnVzaW9uIjp7InN5biI6WyJhYnVuZGFuY2UiLCJwbGV0aG9yYSIsInByb2Z1c2VuZXNzIiwiY29ybnVjb3BpYSIsImV4dHJhdmFnYW5jZSJdLCJhbnQiOlsic2NhcmNpdHkiLCJkZWFydGgiLCJwYXVjaXR5Iiwic3BhcnNlbmVzcyJdfSwiZXVwaGVtaXNtIjp7InN5biI6WyJnZW50ZWVsaXNtIiwic29mdCB0ZXJtIiwiaW5kaXJlY3QgdGVybSIsInVuZGVyc3RhdGVtZW50IiwicG9saXRlbmVzcyJdLCJhbnQiOlsiZHlzcGhlbWlzbSIsImJsdW50bmVzcyIsImRpcmVjdG5lc3MiLCJ0cnV0aCJdfSwiZGlzcXVpZXRpbmciOnsic3luIjpbInVuZWFzeSIsImRpc3R1cmJpbmciLCJ3b3JyaXNvbWUiLCJkaXNjb25jZXJ0aW5nIiwiYWxhcm1pbmciXSwiYW50IjpbImNvbWZvcnRpbmciLCJyZWFzc3VyaW5nIiwiY2FsbWluZyIsInNvb3RoaW5nIl19LCJwb3J0ZW50b3VzIjp7InN5biI6WyJvbWlub3VzIiwiZmF0ZWZ1bCIsInRocmVhdGVuaW5nIiwic2lnbmlmaWNhbnQiLCJtYWpvciJdLCJhbnQiOlsiaW5zaWduaWZpY2FudCIsInRyaXZpYWwiLCJ1bmltcG9ydGFudCIsInJpZGljdWxvdXMiXX0sInByaWciOnsic3luIjpbIm1vcmFsaXN0Iiwic211ZyBwZXJzb24iLCJnb29keeKAkWdvb2R5IiwicHVyaXRhbiIsImJsdWVub3NlIl0sImFudCI6WyJsaWJlcnRpbmUiLCJoZWRvbmlzdCIsInNpbm5lciIsImZyZWUgc3Bpcml0Il19LCJ2aWNhcmlvdXNseSI6eyJzeW4iOlsic2Vjb25k4oCRaGFuZCIsImJ5IHByb3h5IiwiaW5kaXJlY3RseSIsInRocm91Z2ggYW5vdGhlciIsInN1cnJvZ2F0ZSJdLCJhbnQiOlsiZGlyZWN0bHkiLCJwZXJzb25hbGx5IiwiZmlyc3TigJFoYW5kIiwiaW1tZWRpYXRlbHkiXX0sIm1hZ25hbmltb3VzIjp7InN5biI6WyJnZW5lcm91cyIsImZvcmdpdmluZyIsIm5vYmxlIiwiYmln4oCRaGVhcnRlZCIsImJlbmV2b2xlbnQiXSwiYW50IjpbInBldHR5Iiwic3BpdGVmdWwiLCJ2aW5kaWN0aXZlIiwibmlnZ2FyZGx5Il19LCJwcmVzdW1wdHVvdXMiOnsic3luIjpbImFycm9nYW50IiwiYm9sZCIsImZvcndhcmQiLCJvdmVyY29uZmlkZW50IiwiaW1wZXJ0aW5lbnQiXSwiYW50IjpbImh1bWJsZSIsInJlc3BlY3RmdWwiLCJjYXV0aW91cyIsIm1vZGVzdCJdfSwiaW5xdWVzdCI6eyJzeW4iOlsiaW5xdWlyeSIsImludmVzdGlnYXRpb24iLCJwcm9iZSIsImV4YW1pbmF0aW9uIiwiaGVhcmluZyJdLCJhbnQiOlsiZGlzbWlzc2FsIiwiZXhvbmVyYXRpb24iLCJjb25jbHVzaW9uIiwic2V0dGxlbWVudCJdfSwiZGVqZWN0aW9uIjp7InN5biI6WyJkZXByZXNzaW9uIiwiZ2xvb20iLCJtZWxhbmNob2x5IiwiZGVzcG9uZGVuY3kiLCJzYWRuZXNzIl0sImFudCI6WyJqb3kiLCJlbGF0aW9uIiwiaGFwcGluZXNzIiwiZXVwaG9yaWEiXX0sImluZGlzY2VybmlibGUiOnsic3luIjpbImltcGVyY2VwdGlibGUiLCJpbnZpc2libGUiLCJ1bmRldGVjdGFibGUiLCJzdWJ0bGUiLCJ1bm5vdGljZWFibGUiXSwiYW50IjpbImNsZWFyIiwib2J2aW91cyIsInZpc2libGUiLCJkaXN0aW5jdCJdfSwic3RyYXR1bSI6eyJzeW4iOlsibGF5ZXIiLCJsZXZlbCIsInRpZXIiLCJjbGFzcyIsImRpdmlzaW9uIl0sImFudCI6WyJ3aG9sZSIsInRvdGFsaXR5IiwidW5pdHkiLCJhbWFsZ2FtIl19LCJyZWRvbGVudCI6eyJzeW4iOlsicmVtaW5pc2NlbnQiLCJzdWdnZXN0aXZlIiwiZXZvY2F0aXZlIiwiZnJhZ3JhbnQiLCJhcm9tYXRpYyJdLCJhbnQiOlsidW5yZW1pbmlzY2VudCIsImZvcmdldGZ1bCIsIm9kb3VybGVzcyJdfSwiYW1vcnBob3VzIjp7InN5biI6WyJmb3JtbGVzcyIsInNoYXBlbGVzcyIsInZhZ3VlIiwibmVidWxvdXMiLCJ1bnN0cnVjdHVyZWQiXSwiYW50IjpbImRlZmluZWQiLCJzdHJ1Y3R1cmVkIiwic2hhcGVkIiwiZGlzdGluY3QiXX0sImFkdmVudGl0aW91cyI6eyJzeW4iOlsiYWNjaWRlbnRhbCIsImNoYW5jZSIsImluY2lkZW50YWwiLCJyYW5kb20iLCJ1bmZvcmVzZWVuIl0sImFudCI6WyJwbGFubmVkIiwiZGVsaWJlcmF0ZSIsImludGVudGlvbmFsIiwiZGVzaWduZWQiXX0sImNpcmN1bXN0YW50aWFsIjp7InN5biI6WyJpbmRpcmVjdCIsImRldGFpbGVkIiwicHJlc3VtcHRpdmUiLCJwdXRhdGl2ZSIsImluZmVyZW50aWFsIl0sImFudCI6WyJkaXJlY3QiLCJjb25jbHVzaXZlIiwiYWJzb2x1dGUiLCJpcnJlZnV0YWJsZSJdfSwic3VybWlzZSI6eyJzeW4iOlsiZ3Vlc3MiLCJzcGVjdWxhdGlvbiIsInN1cHBvc2l0aW9uIiwiY29uamVjdHVyZSIsImFzc3VtcHRpb24iXSwiYW50IjpbImZhY3QiLCJrbm93bGVkZ2UiLCJwcm9vZiIsImNlcnRhaW50eSJdfSwic29saWRhcml0eSI6eyJzeW4iOlsidW5pdHkiLCJmZWxsb3dzaGlwIiwiY2FtYXJhZGVyaWUiLCJicm90aGVyaG9vZCIsImNvaGVzaW9uIl0sImFudCI6WyJkaXZpc2lvbiIsImRpc2NvcmQiLCJkaXN1bml0eSIsImFsaWVuYXRpb24iXX0sImRlZmVyIjp7InN5biI6WyJwb3N0cG9uZSIsImRlbGF5IiwiYWRqb3VybiIsInByb2NyYXN0aW5hdGUiLCJzaGVsdmUiXSwiYW50IjpbImFkdmFuY2UiLCJmb3J3YXJkIiwiZXhwZWRpdGUiLCJoYXN0ZW4iXX0sInJldmVyZW50Ijp7InN5biI6WyJyZXZlcmVudGlhbCIsImF3ZWQiLCJyZXNwZWN0ZnVsIiwiZGV2b3V0IiwidmVuZXJhdGluZyJdLCJhbnQiOlsiZGlzcmVzcGVjdGZ1bCIsImlycmV2ZXJlbnQiLCJkaXNtaXNzaXZlIiwic2Nvcm5mdWwiXX0sImVsb2N1dGlvbiI6eyJzeW4iOlsiZGljdGlvbiIsImVudW5jaWF0aW9uIiwiYXJ0aWN1bGF0aW9uIiwiZGVjbGFtYXRpb24iLCJzcGVlY2giXSwiYW50IjpbIm11bWJsaW5nIiwic2x1cnJpbmciLCJpbmNvaGVyZW5jZSIsImdhYmJsaW5nIl19LCJ0cmFuc2l0b3J5Ijp7InN5biI6WyJlcGhlbWVyYWwiLCJmbGVldGluZyIsInRlbXBvcmFyeSIsInRyYW5zaWVudCIsImJyaWVmIl0sImFudCI6WyJwZXJtYW5lbnQiLCJldmVybGFzdGluZyIsImVuZHVyaW5nIiwibGFzdGluZyJdfSwiYWVzdGhldGljIjp7InN5biI6WyJhcnRpc3RpYyIsImJlYXV0aWZ1bCIsInZpc3VhbCIsImFwcGVhbGluZyIsImdyYWNlZnVsIl0sImFudCI6WyJ1bmFlc3RoZXRpYyIsInVnbHkiLCJ1bmF0dHJhY3RpdmUiLCJmdW5jdGlvbmFsIl19LCJjb21tZW5zdXJhdGUiOnsic3luIjpbInByb3BvcnRpb25hdGUiLCJjb3JyZXNwb25kaW5nIiwiZXF1aXZhbGVudCIsIm1hdGNoaW5nIiwiY29tcGFyYWJsZSJdLCJhbnQiOlsiZGlzcHJvcG9ydGlvbmF0ZSIsInVuZXF1YWwiLCJtaXNtYXRjaGVkIiwiaW5jb21tZW5zdXJhdGUiXX19"))));
+
+// ============================================================
+// REST OF THE JAVASCRIPT (DO NOT MODIFY)
+// ============================================================
+const LS = {
+  get(key, fallback) {
+    try { const v = localStorage.getItem(key); return v !== null ? v : fallback; }
+    catch(e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, val); } catch(e) {}
+  }
+};
+
+function buildGroups() {
+  const n = VOCAB.length;
+  const wordsPerGroup = 10;
+  const numGroups = Math.ceil(n / wordsPerGroup);
+  const groups = [];
+  
+  for (let i = 0; i < numGroups; i++) {
+    const start = i * wordsPerGroup;
+    const end = Math.min(start + wordsPerGroup, n);
+    groups.push(VOCAB.slice(start, end));
+  }
+  
+  return groups;
+}
+
+const GROUPS = buildGroups();
+const NUM_GROUPS = GROUPS.length;
+
+const S = {
+  gIdx: 0,
+  wIdx: 0,
+  sentTab: 0,
+  starred: new Set(JSON.parse(LS.get('wtb_starred', '[]'))),
+  sentences: JSON.parse(LS.get('wtb_sentences', '{}')),
+  quiz: null,
+  quizDone: {},
+  sqQuiz: null,
+};
+
+function saveStarred() { LS.set('wtb_starred', JSON.stringify([...S.starred])); }
+function saveSentences() { LS.set('wtb_sentences', JSON.stringify(S.sentences)); }
+
+function escReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlightWord(text, word) {
+  const e = escReg(word);
+  const re1 = new RegExp('\\b(' + e + ')\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, '<span class="hl">$1</span>');
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b(' + root + '\\w*)\\b', 'gi');
+  return text.replace(re2, '<span class="hl">$1</span>');
+}
+
+function blankWord(text, word) {
+  const blank = '<span class="blank">___________</span>';
+  const e = escReg(word);
+  const re1 = new RegExp('\\b' + e + '\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, blank);
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b' + root + '\\w*\\b', 'gi');
+  return text.replace(re2, blank);
+}
+
+function chapterShort(ch) {
+  const m = ch.match(/Part ([IVX]+)[,\s]+Chapter (\d+)/i);
+  if (m) return 'Pt.' + m[1] + ' · Ch.' + m[2];
+  return ch;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show' + (type ? ' ' + type : '');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 2200);
+}
+
+let currentAudio = null; // Track currently playing audio
+
+function speak(word) {
+  if ('speechSynthesis' in window) {
+    // If audio is playing, stop it (toggle mute)
+    if (currentAudio) {
+      window.speechSynthesis.cancel();
+      currentAudio = null;
+      return;
+    }
+    // Start new audio
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    u.onend = () => { currentAudio = null; };
+    u.onerror = () => { currentAudio = null; };
+    currentAudio = u;
+    window.speechSynthesis.speak(u);
+  }
+
+// Audio for sentences - with toggle support
+function playCurrentSentenceAudio() {
+  try {
+    const sentEn = document.getElementById('sentEn');
+    if (sentEn) {
+      let text = sentEn.textContent;
+      if (text && text !== '—') {
+        text = text.replace(/<[^>]*>/g, '');
+        if (text.trim()) {
+          if ('speechSynthesis' in window) {
+            // Toggle: if audio is playing, stop it; otherwise play
+            if (currentAudio) {
+              window.speechSynthesis.cancel();
+              currentAudio = null;
+            } else {
+              const u = new SpeechSynthesisUtterance(text);
+              u.lang = 'en-US'; u.rate = 0.85;
+              u.onend = () => { currentAudio = null; };
+              u.onerror = () => { currentAudio = null; };
+              currentAudio = u;
+              window.speechSynthesis.speak(u);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) { console.error('Audio error:', e); }
+}
+
+function playSentenceAudioZh() {
+  const sentZh = document.getElementById('sentZh');
+  if (sentZh) {
+    let text = sentZh.textContent;
+    text = text.trim();
+    if (text && text !== '—') {
+      speak(text);
+    }
+  }
+}}
+
+function render() {
+  if (!GROUPS.length || !GROUPS[S.gIdx] || !GROUPS[S.gIdx][S.wIdx]) {
+    console.error('No data available');
+    return;
+  }
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[S.wIdx];
+  const isStarred = S.starred.has(entry.word);
+
+  document.getElementById('groupNumDisplay').textContent = (S.gIdx + 1) + ' / ' + NUM_GROUPS;
+  document.getElementById('prevGroupBtn').disabled = S.gIdx === 0;
+  document.getElementById('nextGroupBtn').disabled = S.gIdx === NUM_GROUPS - 1;
+  renderGroupDots();
+
+  document.getElementById('wordNumDisplay').textContent = S.wIdx + 1;
+  document.getElementById('groupSizeDisplay').textContent = group.length;
+  document.getElementById('prevWordBtn').disabled = S.wIdx === 0;
+  document.getElementById('nextWordBtn').disabled = S.wIdx === group.length - 1;
+
+  const sb = document.getElementById('starBtn');
+  sb.textContent = isStarred ? '★' : '☆';
+  sb.classList.toggle('starred', isStarred);
+
+  document.getElementById('wordDisplay').textContent = entry.word;
+  document.getElementById('pronDisplay').textContent = '[' + entry.pron + ']';
+  
+  // Remove any existing badge first to prevent duplicates
+  const oldBadge = document.querySelector('#pronDisplay + .badge-pos');
+  if (oldBadge) oldBadge.remove();
+  
+  // Create new badge
+  const posBadgeEl = document.createElement('span');
+  posBadgeEl.className = 'badge badge-pos';
+  posBadgeEl.textContent = '[' + (entry.part_of_speech || '') + ']';
+  posBadgeEl.style.display = 'inline-block';
+  posBadgeEl.style.marginLeft = '8px';
+  document.getElementById('pronDisplay').insertAdjacentElement('afterend', posBadgeEl);
+  
+  document.getElementById('defEn').textContent = entry.def_en;
+  document.getElementById('defZh').textContent = entry.def_zh;
+
+  document.getElementById('tabNovel').classList.toggle('active', S.sentTab === 0);
+  document.getElementById('tabAI').classList.toggle('active', S.sentTab === 1);
+
+  let sentEn, sentZh, sentSource;
+  if (S.sentTab === 0) {
+    sentEn = highlightWord(entry.quote_en, entry.word);
+    sentZh = highlightWord(entry.quote_zh, entry.word);
+    sentSource = '— ' + BOOK_CONFIG.author + ', <em>' + BOOK_CONFIG.bookName + '</em> · ' + entry.chapter;
+  } else {
+    sentEn = highlightWord(entry.ex_en, entry.word);
+    sentZh = highlightWord(entry.ex_zh, entry.word);
+    sentSource = '— AI Example · Thematically aligned with <em>' + BOOK_CONFIG.bookName + '</em>';
+  }
+  document.getElementById('sentEn').innerHTML = sentEn;
+  document.getElementById('sentZh').innerHTML = sentZh;
+  document.getElementById('sentSource').innerHTML = sentSource;
+
+  const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+  document.getElementById('synChips').innerHTML = sa.syn.map(w => `<span class="synan-chip syn">${w}</span>`).join('');
+  document.getElementById('antChips').innerHTML = sa.ant.map(w => `<span class="synan-chip ant">${w}</span>`).join('');
+  document.getElementById('synanBlock').style.display = (sa.syn.length || sa.ant.length) ? 'flex' : 'none';
+
+  const tabFlash = document.getElementById('tabFlashcard'); if (tabFlash) tabFlash.classList.toggle('active', S.sentTab === 2);
+  const flashcardContainer = document.getElementById('flashcardContainer');
+  if (flashcardContainer) {
+    flashcardContainer.style.display = S.sentTab === 2 ? 'block' : 'none';
+    if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+  }
+  document.getElementById('sentenceContent').style.display = S.sentTab === 2 ? 'none' : 'block';
+  if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+
+  renderStarredSection();
+  renderMySentences();
+
+  document.getElementById('quizStartDesc').textContent =
+    'Test yourself on Group ' + (S.gIdx + 1) + '. Choose the word, then spell it.';
+  const done = S.quizDone[S.gIdx];
+  const badge = document.getElementById('quizScoreBadge');
+  if (done !== undefined) {
+    badge.style.display = 'inline-block';
+    badge.textContent = done.score + ' / ' + done.total + ' correct';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  const cnt = S.starred.size;
+  document.getElementById('starredCount').textContent = cnt;
+  document.getElementById('starredCountHeader').textContent = cnt;
+}
+
+function renderGroupDots() {
+  const wrap = document.getElementById('groupDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < NUM_GROUPS; i++) {
+    const d = document.createElement('div');
+    d.className = 'group-dot' +
+      (i === S.gIdx ? ' active' : '') +
+      (S.quizDone[i] !== undefined && i !== S.gIdx ? ' done' : '');
+    wrap.appendChild(d);
+  }
+}
+
+function renderStarredSection() {
+  const list = document.getElementById('starredList');
+  list.innerHTML = '';
+  if (S.starred.size === 0) {
+    list.innerHTML = '<div class="starred-empty">No starred words yet. Tap ☆ on any word to save it.</div>';
+  } else {
+    [...S.starred].forEach(word => {
+      const idx = VOCAB.findIndex(v => v.word === word);
+      if (idx === -1) return;
+      const chip = document.createElement('button');
+      chip.className = 'starred-chip';
+      chip.textContent = word;
+      chip.title = VOCAB[idx].def_en;
+      chip.addEventListener('click', () => navigateToWord(idx));
+      list.appendChild(chip);
+    });
+  }
+  renderStarredQuizStart();
+}
+
+function renderMySentences() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const sents = S.sentences[word] || [];
+  const max = 3;
+
+  const counter = document.getElementById('mySentCounter');
+  counter.textContent = sents.length + ' / ' + max;
+  counter.className = 'my-sent-counter' + (sents.length >= max ? ' full' : '');
+
+  const input = document.getElementById('mySentInput');
+  const saveBtn = document.getElementById('mySentSaveBtn');
+  input.disabled = sents.length >= max;
+  saveBtn.disabled = sents.length >= max;
+  input.placeholder = sents.length >= max
+    ? 'Maximum 3 sentences saved ✓'
+    : 'Write your own sentence using "' + word + '"…';
+
+  const list = document.getElementById('mySentList');
+  list.innerHTML = '';
+  sents.forEach((text, i) => {
+    const item = document.createElement('div');
+    item.className = 'my-sent-item';
+    item.innerHTML =
+      '<span class="my-sent-num">' + (i + 1) + '</span>' +
+      '<span class="my-sent-text">' + escapeHTML(text) + '</span>' +
+      '<button class="my-sent-del" data-idx="' + i + '" title="Delete">✕</button>';
+    item.querySelector('.my-sent-del').addEventListener('click', () => deleteSentence(word, i));
+    list.appendChild(item);
+  });
+}
+
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function addSentence() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const input = document.getElementById('mySentInput');
+  const text = input.value.trim();
+  if (!text) { toast('Please write a sentence first.', ''); return; }
+  if (!S.sentences[word]) S.sentences[word] = [];
+  if (S.sentences[word].length >= 3) { toast('Max 3 sentences per word.', ''); return; }
+  const wordLower = word.toLowerCase();
+  const rootLower = wordLower.substring(0, Math.max(4, Math.floor(wordLower.length * 0.72)));
+  if (!text.toLowerCase().includes(rootLower)) {
+    toast('💡 Try to use "' + word + '" in your sentence!', '');
+  }
+  S.sentences[word].push(text);
+  saveSentences();
+  input.value = '';
+  renderMySentences();
+  toast('✓ Sentence saved!', 'good');
+}
+
+function deleteSentence(word, idx) {
+  if (!S.sentences[word]) return;
+  S.sentences[word].splice(idx, 1);
+  if (S.sentences[word].length === 0) delete S.sentences[word];
+  saveSentences();
+  renderMySentences();
+}
+
+function renderStarredQuizStart() {
+  const count = S.starred.size;
+  const canStart = count >= 5;
+  document.getElementById('sqDesc').textContent = canStart
+    ? 'Quiz yourself on all ' + count + ' starred words.'
+    : 'Keep starring words to unlock your personal quiz.';
+  document.getElementById('sqStartBtn').style.display = canStart ? 'inline-block' : 'none';
+  document.getElementById('sqUnlockHint').style.display = canStart ? 'none' : 'block';
+  document.getElementById('sqStarredCount').textContent = count;
+  document.getElementById('sqStartArea').style.display = 'block';
+  document.getElementById('sqQuestionArea').style.display = 'none';
+  document.getElementById('sqResult').style.display = 'none';
+}
+
+function startStarredQuiz() {
+  const starredWords = [...S.starred];
+  if (starredWords.length < 5) return;
+
+  const entries = starredWords
+    .map(w => VOCAB.find(v => v.word === w))
+    .filter(Boolean);
+
+  const questions = shuffle(entries);
+  S.sqQuiz = { questions, qIdx: 0, score: 0, answered: false };
+
+  document.getElementById('sqStartArea').style.display = 'none';
+  document.getElementById('sqQuestionArea').style.display = 'block';
+  document.getElementById('sqResult').style.display = 'none';
+  renderSQQuestion();
+}
+
+function renderSQQuestion() {
+  const q = S.sqQuiz;
+  const entry = q.questions[q.qIdx];
+  const total = q.questions.length;
+
+  document.getElementById('sqQNum').textContent = 'Question ' + (q.qIdx + 1) + ' / ' + total;
+  document.getElementById('sqProgressFill').style.width = ((q.qIdx / total) * 100) + '%';
+  document.getElementById('sqSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+  const pool = [...S.starred].filter(w => w !== entry.word);
+  const starredDistractors = shuffle(pool).slice(0, 3);
+  const needed = 3 - starredDistractors.length;
+  let extra = [];
+  if (needed > 0) {
+    extra = shuffle(VOCAB.map(v => v.word).filter(w => w !== entry.word && !S.starred.has(w))).slice(0, needed);
+  }
+  const choices = shuffle([entry.word, ...starredDistractors, ...extra].slice(0, 4));
+
+  const labels = ['A', 'B', 'C', 'D'];
+  const container = document.getElementById('sqChoices');
+  container.innerHTML = '';
+  choices.forEach((word, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+    btn.dataset.word = word;
+    btn.addEventListener('click', () => checkSQAnswer(word, entry.word, entry.def_en));
+    container.appendChild(btn);
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('sqNextBtn').style.display = 'none';
+  q.answered = false;
+}
+
+function checkSQAnswer(chosen, correct, defHint) {
+  if (S.sqQuiz.answered) return;
+  S.sqQuiz.answered = true;
+
+  document.querySelectorAll('#sqChoices .choice-btn').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  if (chosen === correct) {
+    S.sqQuiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  } else {
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('sqNextBtn');
+  const isLast = S.sqQuiz.qIdx === S.sqQuiz.questions.length - 1;
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function sqNext() {
+  const q = S.sqQuiz;
+  if (q.qIdx < q.questions.length - 1) {
+    q.qIdx++;
+    renderSQQuestion();
+  } else {
+    const total = q.questions.length;
+    const pct = Math.round((q.score / total) * 100);
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
+    document.getElementById('sqQuestionArea').style.display = 'none';
+    document.getElementById('sqResult').style.display = 'block';
+    document.getElementById('sqProgressFill').style.width = '100%';
+    document.getElementById('sqResultScore').textContent = emoji + ' ' + q.score + ' / ' + total;
+    document.getElementById('sqResultLabel').textContent =
+      pct >= 80 ? 'Excellent — your starred words are solid!' :
+      pct >= 60 ? 'Good progress. Review the ones you missed.' :
+                  'Keep studying — revisit your starred words.';
+  }
+}
+
+function goGroup(idx) {
+  S.gIdx = Math.max(0, Math.min(NUM_GROUPS - 1, idx));
+  S.wIdx = 0;
+  S.sentTab = 0;
+  resetQuizUI();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goWord(idx) {
+  const group = GROUPS[S.gIdx];
+  S.wIdx = Math.max(0, Math.min(group.length - 1, idx));
+  S.sentTab = 0;
+  render();
+}
+
+function navigateToWord(vocabIdx) {
+  let cumulative = 0;
+  for (let g = 0; g < NUM_GROUPS; g++) {
+    if (vocabIdx < cumulative + GROUPS[g].length) {
+      S.gIdx = g;
+      S.wIdx = vocabIdx - cumulative;
+      S.sentTab = 0;
+      resetQuizUI();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    cumulative += GROUPS[g].length;
+  }
+}
+
+function toggleStar() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+    toast('Removed from starred', '');
+  } else {
+    S.starred.add(word);
+    toast('⭐ Starred: ' + word, 'gold');
+  }
+  saveStarred();
+  render();
+}
+
+function resetQuizUI() {
+  S.quiz = null;
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+  document.getElementById('quizStartArea').style.display = 'block';
+  document.getElementById('quizQuestionArea').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+}
+
+function startQuiz() {
+  const group = GROUPS[S.gIdx];
+  const questions = shuffle(group.map((entry, i) => ({ entry, groupIdx: i })));
+  S.quiz = {
+    questions,
+    qIdx: 0,
+    phase: 1,
+    score: 0,
+    spellScore: 0,
+    answered: false,
+  };
+  document.getElementById('quizStartArea').style.display = 'none';
+  document.getElementById('quizQuestionArea').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = S.quiz;
+  const { entry } = q.questions[q.qIdx];
+  const total = q.questions.length;
+  const step = q.qIdx * 2 + (q.phase - 1);
+  const totalSteps = total * 2;
+
+  document.getElementById('quizQNum').textContent =
+    'Word ' + (q.qIdx + 1) + ' / ' + total + ' · ' + (q.phase === 1 ? 'Part 1: Choose' : 'Part 2: Spell');
+  document.getElementById('quizProgressFill').style.width = ((step / totalSteps) * 100) + '%';
+
+  document.getElementById('quizNextBtn').style.display = 'none';
+
+  if (q.phase === 1) {
+    document.getElementById('quizPhase1').style.display = 'block';
+    document.getElementById('quizPhase2').style.display = 'none';
+
+    document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+    const group = GROUPS[S.gIdx];
+    const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
+    const choices = shuffle([entry.word, ...distractors]);
+    const labels = ['A', 'B', 'C', 'D'];
+    const container = document.getElementById('quizChoices');
+    container.innerHTML = '';
+    choices.forEach((word, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+      btn.dataset.word = word;
+      btn.addEventListener('click', () => checkAnswer(word, entry.word));
+      container.appendChild(btn);
+    });
+
+    const fb = document.getElementById('quizFeedback');
+    fb.style.display = 'none';
+    fb.className = 'quiz-feedback';
+    q.answered = false;
+
+  } else {
+    document.getElementById('quizPhase1').style.display = 'none';
+    document.getElementById('quizPhase2').style.display = 'block';
+    renderQuizSpell(entry);
+  }
+}
+
+function renderQuizSpell(entry) {
+  const word = entry.word.toLowerCase();
+  document.getElementById('qSpellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____<\/span>');
+
+  const boxes = document.getElementById('qSpellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+  const inp = document.getElementById('qSpellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  const fb = document.getElementById('qSpellFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('qSpellRevealBtn').style.display = 'block';
+  updateQSpellBoxes('');
+}
+
+function updateQSpellBoxes(typed) {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) { b.textContent = t[i]; b.classList.add('filled'); }
+    else { b.textContent = ''; if (i === t.length) b.classList.add('cursor'); }
+  });
+}
+
+function checkQuizSpelling() {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('qSpellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('qSpellFeedback');
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    S.quiz.spellScore++;
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; });
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Perfect spelling!';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch) b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function checkAnswer(chosen, correct) {
+  if (S.quiz.answered) return;
+  S.quiz.answered = true;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  if (chosen === correct) {
+    S.quiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" is right.';
+  } else {
+    // Auto-star word on wrong answer
+    S.starred.add(correct);
+    saveStarred();
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '".';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = 'Next: Spell It →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function quizNext() {
+  const q = S.quiz;
+  const total = q.questions.length;
+  if (q.phase === 1) {
+    q.phase = 2;
+    renderQuestion();
+  } else if (q.qIdx < total - 1) {
+    q.qIdx++;
+    q.phase = 1;
+    renderQuestion();
+  } else {
+    const mcPct = Math.round((q.score / total) * 100);
+    const spPct = Math.round((q.spellScore / total) * 100);
+    const combined = q.score + q.spellScore;
+    const combMax = total * 2;
+    const emoji = mcPct >= 80 ? '🎉' : mcPct >= 60 ? '👍' : '📚';
+    document.getElementById('quizQuestionArea').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizProgressFill').style.width = '100%';
+    document.getElementById('quizResultScore').textContent = emoji + ' ' + combined + ' / ' + combMax;
+    document.getElementById('quizResultLabel').textContent =
+      '📖 Choose: ' + q.score + '/' + total + '  ·  ✏️ Spell: ' + q.spellScore + '/' + total + (
+        mcPct >= 80 && spPct >= 80 ? '  —  Outstanding!' :
+        mcPct >= 60 ? '  —  Good work! Review the ones you missed.' :
+        '  —  Keep studying — you\'ll get there!'
+      );
+    S.quizDone[S.gIdx] = { score: combined, total: combMax };
+    render();
+  }
+}
+
+
+
+function updateBoxes(typed) {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('.spell-box');
+
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) {
+      b.textContent = t[i];
+      b.classList.add('filled');
+    } else {
+      b.textContent = '';
+      if (i === t.length) b.classList.add('cursor');
+    }
+  });
+}
+
+function checkSpelling() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('spellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('spellFeedback');
+
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; b.textContent = b.textContent || ''; });
+    fb.className = 'spell-feedback ok';
+    fb.textContent = '✓ Correct! You spelled "' + entry.word + '" perfectly.';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch)          b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else              { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'spell-feedback err';
+    fb.textContent = '✗ Not quite. The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+}
+
+document.getElementById('prevGroupBtn').addEventListener('click', () => goGroup(S.gIdx - 1));
+document.getElementById('nextGroupBtn').addEventListener('click', () => goGroup(S.gIdx + 1));
+document.getElementById('prevWordBtn').addEventListener('click', () => goWord(S.wIdx - 1));
+document.getElementById('nextWordBtn').addEventListener('click', () => goWord(S.wIdx + 1));
+document.getElementById('starBtn').addEventListener('click', toggleStar);
+  document.getElementById('speakBtn').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+  const sentenceBtn = document.getElementById('sentenceHearBtn');
+  if (sentenceBtn) {
+    sentenceBtn.addEventListener('click', () => {
+      const sentEn = document.getElementById('sentEn');
+      if (sentEn) {
+        let text = sentEn.textContent;
+        if (text && text !== '—') {
+          text = text.replace(/<[^>]*>/g, '');
+          if (text.trim()) speak(text);
+        }
+      }
+    });
+  }
+document.getElementById('speakBtn2').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+document.getElementById('tabNovel').addEventListener('click', () => { S.sentTab = 0; render(); });
+document.getElementById('tabAI').addEventListener('click',   () => { S.sentTab = 1; render(); });
+const tabFlashcard = document.getElementById('tabFlashcard');
+if (tabFlashcard) tabFlashcard.addEventListener('click', () => { S.sentTab = 2; flashcardState.index = 0; render(); if (document.getElementById('flashcardContainer')) renderFlashcard(); });
+document.getElementById('mySentSaveBtn').addEventListener('click', addSentence);
+document.getElementById('mySentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); addSentence(); }
+});
+document.getElementById('sqStartBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqNextBtn').addEventListener('click', sqNext);
+document.getElementById('sqRetryBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqResetBtn').addEventListener('click', renderStarredQuizStart);
+document.getElementById('quizHeader').addEventListener('click', () => {
+  const body = document.getElementById('quizBody');
+  const icon = document.getElementById('quizToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('quizStartBtn').addEventListener('click', startQuiz);
+document.getElementById('quizSkipBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('qSpellInput').addEventListener('input', e => {
+  updateQSpellBoxes(e.target.value);
+});
+document.getElementById('qSpellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkQuizSpelling(); }
+});
+document.getElementById('qSpellCheckBtn').addEventListener('click', checkQuizSpelling);
+document.getElementById('qSpellRevealBtn').addEventListener('click', () => {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const fb = document.getElementById('qSpellFeedback');
+  fb.className = 'quiz-feedback wrong-fb';
+  fb.textContent = 'The word is "' + entry.word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = entry.word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => { b.className = 'spell-box wrong'; b.textContent = wordClean[i] || ''; });
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+});
+document.getElementById('quizNextBtn').addEventListener('click', quizNext);
+document.getElementById('quizRetryBtn').addEventListener('click', () => {
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizStartArea').style.display = 'block';
+});
+document.getElementById('quizCloseBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('starredHeader').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('starredToggleBtn').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  body.classList.add('open');
+  icon.classList.add('open');
+  document.getElementById('starredSection').scrollIntoView({ behavior: 'smooth' });
+});
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// // [Spell listener removed - Spell tab replaced with Flashcard] /* REMOVED - Spell tab no longer exists */
+const flashPrevBtn = document.getElementById('flashPrevBtn');
+if (flashPrevBtn) flashPrevBtn.addEventListener('click', flashcardPrev);
+const flashNextBtn = document.getElementById('flashNextBtn');
+if (flashNextBtn) flashNextBtn.addEventListener('click', flashcardNext);
+const flashStarBtn = document.getElementById('flashStarBtn');
+if (flashStarBtn) flashStarBtn.addEventListener('click', toggleFlashcardStar);
+// // [Spell listener removed - Spell tab replaced with Flashcard]
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  switch(e.key) {
+    case 'ArrowRight': e.preventDefault(); goWord(S.wIdx + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); goWord(S.wIdx - 1); break;
+    case 'ArrowUp':    e.preventDefault(); goGroup(S.gIdx - 1); break;
+    case 'ArrowDown':  e.preventDefault(); goGroup(S.gIdx + 1); break;
+    case 's': case 'S': toggleStar(); break;
+    case 'p': case 'P': speak(GROUPS[S.gIdx][S.wIdx].word); break;
+    case '1': S.sentTab = 0; render(); break;
+    case '2': S.sentTab = 1; render(); break;
+  }
+});
+
+// ── Print functions ──────────────────────────────────────────
+function openPrintModal() {
+  const grp = GROUPS[S.gIdx];
+  document.getElementById('printGroupLabel').textContent = 'Group ' + (S.gIdx + 1);
+  document.getElementById('printGroupCount').textContent = grp.length;
+  document.getElementById('printAllCount').textContent = VOCAB.length;
+  document.getElementById('printModal').style.display = 'block';
+}
+
+function closePrintModal() {
+  document.getElementById('printModal').style.display = 'none';
+}
+
+function doPrint() {
+  const scope = document.querySelector('input[name="printScope"]:checked').value;
+  const words = scope === 'group' ? GROUPS[S.gIdx] : VOCAB;
+  const groupLabel = scope === 'group' ? 'Group ' + (S.gIdx + 1) : 'All Words';
+
+  const rows = words.map((entry, i) => {
+    const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+    const synText = sa.syn.length ? sa.syn.join(', ') : '—';
+    const antText = sa.ant.length ? sa.ant.join(', ') : '—';
+    return `
+      <div class="pe">
+        <div class="pe-head">
+          <span class="pe-num">${i + 1}</span>
+          <span class="pe-word">${entry.word}</span>
+          <span class="pe-pron">${entry.pron}</span>
+          <span class="pe-ch">${entry.chapter}</span>
+        </div>
+        <div class="pe-def">${entry.def_en}</div>
+        <div class="pe-def zh">${entry.def_zh}</div>
+        <div class="pe-synan">
+          <span class="pe-label syn">SYN</span>${synText}
+          &nbsp;&nbsp;<span class="pe-label ant">ANT</span>${antText}
+        </div>
+        <div class="pe-sent">
+          <span class="pe-sent-label">📖</span>
+          <span>${entry.quote_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.quote_zh}</span>
+        </div>
+        <div class="pe-sent ex">
+          <span class="pe-sent-label">💡</span>
+          <span>${entry.ex_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.ex_zh}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>${BOOK_CONFIG.bookName} — Vocabulary (${groupLabel})</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Songti SC', 'SimSun', serif;
+    font-size: 9.5pt;
+    color: #111;
+    background: white;
+    padding: 14mm 12mm;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3pt;
+    letter-spacing: .02em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14pt;
+  }
+  .pe {
+    border-bottom: .5pt solid #ccc;
+    padding: 7pt 0 6pt;
+    break-inside: avoid;
+  }
+  .pe-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5pt;
+    margin-bottom: 2pt;
+    flex-wrap: wrap;
+  }
+  .pe-num {
+    font-size: 7.5pt;
+    color: #888;
+    min-width: 16pt;
+  }
+  .pe-word {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: .01em;
+  }
+  .pe-pron {
+    font-size: 8pt;
+    color: #555;
+    font-style: italic;
+  }
+  .pe-ch {
+    font-size: 7.5pt;
+    color: #888;
+    margin-left: auto;
+  }
+  .pe-def {
+    font-size: 8.5pt;
+    color: #222;
+    margin-bottom: 1.5pt;
+    line-height: 1.4;
+  }
+  .pe-def.zh {
+    color: #444;
+    font-size: 8pt;
+    margin-bottom: 3pt;
+  }
+  .pe-synan {
+    font-size: 8pt;
+    margin-bottom: 3.5pt;
+    color: #333;
+    line-height: 1.5;
+  }
+  .pe-label {
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 4pt;
+    border-radius: 3pt;
+    margin-right: 3pt;
+    letter-spacing: .04em;
+  }
+  .pe-label.syn {
+    background: #e6faf4;
+    color: #1a7a55;
+    border: .5pt solid #aadec8;
+  }
+  .pe-label.ant {
+    background: #fef0f2;
+    color: #a02040;
+    border: .5pt solid #f0b0bc;
+  }
+  .pe-sent {
+    font-size: 8pt;
+    line-height: 1.45;
+    color: #333;
+    display: flex;
+    gap: 4pt;
+    margin-top: 1.5pt;
+  }
+  .pe-sent.ex { color: #1a4a70; }
+  .pe-sent.zh { color: #555; margin-top: 1pt; }
+  .pe-sent-label {
+    font-size: 8pt;
+    min-width: 12pt;
+    flex-shrink: 0;
+  }
+  .footer {
+    position: running(footer);
+    font-size: 7.5pt;
+    color: #888;
+    text-align: center;
+  }
+  @page {
+    margin: 14mm 12mm 18mm;
+    @bottom-center { content: element(footer); }
+  }
+  @media print {
+    .footer { display: block; }
+  }
+</style>
+</head>
+<body>
+<h1>${BOOK_CONFIG.bookName} Vocabulary</h1>
+<div class="subtitle">${BOOK_CONFIG.author} &nbsp;·&nbsp; ${groupLabel} &nbsp;·&nbsp; ${words.length} words &nbsp;·&nbsp; 📖 Novel sentence &nbsp; 💡 AI example sentence</div>
+<div class="footer">${BOOK_CONFIG.bookName} — ${BOOK_CONFIG.author} &nbsp;|&nbsp; ${groupLabel}</div>
+<div class="grid">${rows}</div>
+</body>
+</html>`;
+
+  closePrintModal();
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  win.focus();
+  setTimeout(() => win.print(), 400);
+}
+
+
+let flashcardState = { side: 'word', index: 0 };
+
+function speakFlashcard() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  speak(word);
+}
+
+
+
+function toggleFlashcard() {
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  
+  if (flashcardState.side === 'word') {
+    flashcardState.side = 'def-en';
+    label.textContent = 'English Definition';
+    const pos = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos + ']</span>' + entry.def_en;
+    content.className = 'flashcard-content flashcard-def-en';
+    inner.style.background = 'linear-gradient(160deg, rgba(26,74,112,.85), rgba(14,34,48,.95))';
+  } else if (flashcardState.side === 'def-en') {
+    flashcardState.side = 'def-zh';
+    label.textContent = 'Collocations';
+    const pos2 = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos2 + ']</span>' + entry.def_zh;
+    content.className = 'flashcard-content flashcard-def-zh';
+    inner.style.background = 'linear-gradient(160deg, rgba(50,34,90,.85), rgba(30,20,50,.95))';
+  } else {
+    flashcardState.side = 'word';
+    label.textContent = 'Word';
+    content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div>' + '<div class="flashcard-pron">[' + (entry.pron || '') + ']</div>' + '<div class="flashcard-pos-display">[' + (entry.part_of_speech || '') + ']</div>' + '<button class="flashcard-hear" onclick="speakFlashcard()" data-word="' + entry.word.replace(/'/g, "\\'") + '">🔊 Hear</button>';
+    content.className = 'flashcard-content';
+    inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  }
+}
+
+function renderFlashcard() {
+  const container = document.getElementById('flashcardContainer');
+  if (!container) return; // Exit if flashcard container doesn't exist
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  const isStarred = S.starred.has(entry.word);
+  
+  flashcardState.side = 'word';
+  
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  label.textContent = 'Word';
+  content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div><div class="flashcard-pron">[' + (entry.pron || '') + ']</div><span class="badge badge-pos">[' + (entry.part_of_speech || '') + ']</span><button class="flashcard-hear" id="flashHearBtn" onclick="speakFlashcard()">🔊 Hear</button>';
+  content.className = 'flashcard-content';
+  inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  
+  document.getElementById('flashProgress').textContent = (flashcardState.index + 1) + ' / ' + group.length;
+  document.getElementById('flashPrevBtn').disabled = flashcardState.index === 0;
+  document.getElementById('flashNextBtn').disabled = flashcardState.index === group.length - 1;
+  
+  const starBtn = document.getElementById('flashStarBtn');
+  starBtn.textContent = isStarred ? '⭐' : '☆';
+  starBtn.classList.toggle('starred', isStarred);
+}
+
+function flashcardPrev() {
+  if (flashcardState.index > 0) {
+    flashcardState.index--;
+    renderFlashcard();
+  }
+}
+
+function flashcardNext() {
+  const group = GROUPS[S.gIdx];
+  if (flashcardState.index < group.length - 1) {
+    flashcardState.index++;
+    renderFlashcard();
+  }
+}
+
+function toggleFlashcardStar() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+  } else {
+    S.starred.add(word);
+  }
+  saveStarred();
+  renderFlashcard();
+}
+
+
+// Initialize
+if (VOCAB.length > 1) {
+  render();
+} else {
+  document.getElementById('wordDisplay').textContent = 'Add Data';
+  document.getElementById('defEn').textContent = 'Please paste your 100 vocabulary words into the VOCAB array.';
+}
+</script>
+
+<!-- Print Modal -->
+<div id="printModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:9999; overflow-y:auto; padding:20px;">
+  <div style="max-width:520px; margin:0 auto; background:var(--panel); border:1px solid var(--s35); border-radius:16px; padding:28px 24px;">
+    <h2 style="font-family:Georgia,serif; color:var(--good); margin-bottom:6px; font-size:1.3rem;">🖨️ Print Vocabulary</h2>
+    <p style="color:var(--muted); font-size:.85rem; margin-bottom:20px;">Each entry includes word, pronunciation, definitions, synonyms &amp; antonyms, and both sentences.</p>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px;">
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="group" checked style="accent-color:var(--good); width:16px; height:16px;">
+        Current group only (<span id="printGroupLabel">Group 1</span> · <span id="printGroupCount">10</span> words)
+      </label>
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="all" style="accent-color:var(--good); width:16px; height:16px;">
+        All words (<span id="printAllCount">100</span> words)
+      </label>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="doPrint()" style="flex:1; background:var(--good); color:#06131a; border:none; border-radius:10px; padding:11px; font-weight:800; font-size:.95rem; cursor:pointer;">Print / Save PDF</button>
+      <button onclick="closePrintModal()" style="flex:1; background:var(--panel2); color:var(--muted); border:1px solid var(--s35); border-radius:10px; padding:11px; font-weight:700; font-size:.95rem; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
